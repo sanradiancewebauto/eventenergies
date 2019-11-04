@@ -14,7 +14,7 @@ public static void openURL()
 {
 
    try{
-
+	 
    System.setProperty("webdriver.chrome.driver", "D:\\EventTestAutomation\\Repos\\WebAutomation\\EventBooking\\src\\main\\java\\BrowserDrivers\\chromedriver77.exe");
    driver = new ChromeDriver();
    driver.manage().window().maximize();
