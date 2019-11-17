@@ -6,8 +6,8 @@ import org.openqa.selenium.WebDriver;
 public class LognPage {
 	public static WebDriver driver;
 	
-	public static void login(){
-		DriverManager.BaseDriver.openURL();
+	public static void login() throws Exception{
+		driver = DriverManager.BaseDriver.getDriverConn("firefox");
 		
 		driver.manage().window().maximize();
 		
