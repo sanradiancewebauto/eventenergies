@@ -10,7 +10,7 @@
 //}
 package TestManager;
 
-import java.util.concurrent.TimeUnit;
+//import java.util.concurrent.TimeUnit;
 
 //import java.util.concurrent.TimeUnit;
 
@@ -28,34 +28,16 @@ public class loginTest {
 
 		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver= new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.get("https://www.storytwinkle.com");
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 	LognPage LognPage= new LognPage(driver);
 		
 		LognPage.loginToEventEnergies("lokeshbabu@gmail.com", "lokeshbabu@gmail.com");
 
-
-
-
-
 	}
-//	public void verifyValidEmail() throws InterruptedException {
-//
-//
-//		Thread.sleep(1000);
-//
-//
-//
-//		WebDriver invalidError =PageFactory.LognPage.loginToWordPress(" ","demo123"); 
-//
-//		Thread.sleep(1000);
-//
-//		System.out.println(invalidError);
-//
-//
-//	}
+
 }
 
