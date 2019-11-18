@@ -13,7 +13,7 @@ public class BaseDriver
 {
 
 	public static WebDriver driver = null;
-	public static String driverLocation = "D:\\EventTestAutomation\\Repos\\WebAutomation\\EventBooking\\src\\main\\java\\BrowserDrivers\\";
+	public static String driverLocation = "D:\\EventTestAutomation\\GitRepo\\eventenergies\\EventBooking\\src\\main\\java\\BrowserDrivers\\";
 	public static final String baseURL = "https://www.storytwinkle.com";
 	//CALL WEB BROWSER AND OPEN WEBSITE
 	public static WebDriver getDriverConn(String browserName) throws Exception
