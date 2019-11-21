@@ -19,6 +19,13 @@
 
 package PageFactory;
 
+//import java.io.FileInputStream;
+import java.io.IOException;
+//
+//import org.apache.poi.ss.usermodel.Cell;
+//import org.apache.poi.ss.usermodel.Row;
+//import org.apache.poi.xssf.usermodel.XSSFSheet;
+//import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -33,6 +40,9 @@ public class LognPage {
 	static By LoginPassword = By.id(ElementRepository.LoginPageElements.LoginPassword);
 
 	static By loginButton = By.xpath(ElementRepository.LoginPageElements.loginButton);
+	
+	
+	
 
 	public LognPage(WebDriver driver) {
 		// TODO Auto-generated constructor stub
@@ -40,7 +50,7 @@ public class LognPage {
 	}
 
 
-	public WebDriver loginToEventEnergies(String uid,String pass){
+	public WebDriver loginToEventEnergies(String uid,String pass) throws IOException{
 
 		driver.findElement(Login).click();
 
@@ -49,10 +59,21 @@ public class LognPage {
 		driver.findElement(LoginPassword).sendKeys(pass);
 
 		driver.findElement(loginButton).click();
-
+		
+		System.out.println("hhhhhhhhhhhhh");
+		
+		
+		
 		return driver;
 	}
+	
+
+
+	
+		}
+
+	
 
 
 
-}
+
