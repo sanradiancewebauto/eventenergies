@@ -1,3 +1,7 @@
 /target/
-.setting/
-.classpath
+EventBooking/.classpath
+EventBooking/.Settings/
+EventBooking/test-output/
+EventBooking/.project
+EventBooking/logs/*.log
+/bin/
