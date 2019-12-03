@@ -79,9 +79,9 @@ public class MainPage {
 				System.out.printf("\nCheck if the event image is displayed and responsive. ");
 				WebElement eventImage = eventCounts.get(i).findElement(By.xpath(ElementRepository.MainPageElements.iterateItem(i)));
 				if (eventImage.getAttribute("class").equals("img-responsive")){
-						System.out.printf("Event image is clickable.");
+						System.out.println("Event image is clickable.");
 				}else {
-					System.out.printf("Event image is not clickable.");
+					System.out.println("Event image is not clickable.");
 					status = false;
 				}
 			}
@@ -93,12 +93,11 @@ public class MainPage {
 				for (int i=0; i<=5; i++) {
 					WebElement eventDots = driver.findElement(By.xpath(ElementRepository.MainPageElements.iterateItemSliderDots(i)));
 					if (eventDots.isDisplayed()) {
-						System.out.printf("\nSlider dot button is clickable. %s", eventDots.getTagName());
+						System.out.printf("\nSlider dot button is clickable.");
 						Thread.sleep(500);
 						eventDots.click();
 						WebElement activeEvent = driver.findElement(By.className("slick-active"));
-						System.out.printf("\nDisplaying active event on the MainPage Slider.",activeEvent);
-						
+						System.out.printf("\nVerify active event on the MainPage slider with dot click",activeEvent);
 					}else {
 						System.out.println("Slider dotbutton not clickable.");
 						status = false;

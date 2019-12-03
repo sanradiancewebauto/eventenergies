@@ -2,7 +2,6 @@ package TestManager;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import org.testng.ITestContext;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -26,8 +25,8 @@ public class MainpageTest {
 		
     	System.out.println("Test to verify the mainpage menubar element display.");
 		boolean status = PageFactory.MainPage.checkMenuBarItems(browserName, driver);
-		Assert.assertTrue(status, "\nCheck MainPage Menubar status successful");
-		System.out.println("Check MainPage Menubar status failed.");
+		Assert.assertTrue(status, "Verification of MainPage Menubar status failed.");
+		System.out.println("\nVerification of  MainPage Menubar status successful.");
 		
 	}
     
@@ -35,9 +34,9 @@ public class MainpageTest {
   	public static void mainpage_event_slider_display_test02() throws Exception{
   		
       	System.out.println("Test to verify the mainpage event slider display.");
-  		boolean status = PageFactory.MainPage.checkEventSlider(browserName, driver);
-  		Assert.assertTrue(status, "\nCheck main page menubar event slider status successful.");
-  		System.out.println("Check main page menubar event slider status failed");
+      	boolean status = PageFactory.MainPage.checkEventSlider(browserName, driver);
+  		Assert.assertTrue(status, "Verification of main page menubar event slider status failed.");
+  		System.out.println("\nVerification of  main page menubar event slider status successful.");
     }
      
     @AfterTest
