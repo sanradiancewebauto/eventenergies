@@ -6,7 +6,6 @@ import java.util.Map;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-//import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -25,6 +24,7 @@ public class LoginTest {
     	log.info("Executing test on thread id : {} ", id);
     	log.info("Initialize setup before [{}] test run.", this.getClass().getSimpleName());
         log.info("Setting test browser as : {}", browserName);
+
         //LOGIN TO SITE
         driver = DriverManager.BaseDriver.getDriverConn(browserName);
     }
@@ -37,7 +37,9 @@ public class LoginTest {
 		Map<String, String> checkValues = (Map<String, String>) PageFactory.LoginPage.userLoginElementDisplay(browserName, driver);
     	log.info("the map object is {}", checkValues);
     	Assert.assertEquals(checkValues.get("Title"),"Sign in to get going.", "No match for title found.");
-    	log.info("Title match found.");	
+    	log.info("Title match found.");
+    	
+    	
     }
     
     @AfterTest
