@@ -1,8 +1,5 @@
 package PageFactory;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import java.io.FileInputStream;
 import java.io.IOException;
 
@@ -10,6 +7,9 @@ import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class RegistrationPage {
 
@@ -74,7 +74,6 @@ public class RegistrationPage {
 	private static void ReadExcel(String browserName, WebDriver driver) throws IOException, InterruptedException {
 
 		FileInputStream fis = new FileInputStream("D:\\eventenergies\\EventBooking\\src\\test\\java\\TestManager\\Login .xlsx");
-		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(fis);
 		XSSFSheet sheet = workbook.getSheetAt(0);
 		Row row = sheet.getRow(0);

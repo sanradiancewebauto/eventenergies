@@ -10,14 +10,14 @@ public class LoginPageElements {
 	public static String Login ="/html/body/app-root/app-home-page/section[1]/div/div[2]/ul/li[3]/a/input";
 
 	//Login page title
-	public static String LoginTitle ="a > div";
+	public static String LoginIconText ="a > div";
 
-	public static String LoginText ="//h3";
+	public static String LoginTitle ="/html/body/app-root/app-login-page/div[1]/div[1]/div/div/h3"; //xpath
 
 	//Email Address
-	public static String LoginUserName = "email";
+	public static String LoginUserName = "email"; //id
 
-	public static String LoginEmailAddresslabel="row:nth-child(1) .heading";
+	public static String LoginEmailAddresslabel=".signin-card > div:nth-child(1) > div:nth-child(1) > label:nth-child(1)"; //css selector 
 
 	public static String RequiredEmailError ="//*[@id=\"Login\"]/div/div[1]/div[2]/div/div";
 
