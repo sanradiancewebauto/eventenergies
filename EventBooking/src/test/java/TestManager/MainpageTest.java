@@ -22,7 +22,7 @@ public class MainpageTest {
         //LOGIN TO SITE
         driver = DriverManager.BaseDriver.getDriverConn(browserName);
     }
-     
+    
     @Test
 	public static void mainpage_menubar_element_display_test01() throws Exception{
 		
@@ -30,11 +30,10 @@ public class MainpageTest {
     	long id = Thread.currentThread().getId();
     	System.out.println("Simple test-method One. Thread id is: " + id);
 		boolean status = PageFactory.MainPage.checkMenuBarItems(browserName, driver);
-		Assert.assertTrue(status, "Check MainPage Menubar status failed");
-		System.out.println("Check MainPage Menubar status successful.");
+		Assert.assertTrue(status, "Verification of MainPage Menubar status failed.");
+		System.out.println("\nVerification of  MainPage Menubar status successful.");
 		
 	}
-
     
     @Test
   	public static void mainpage_event_slider_display_test02() throws Exception{
@@ -43,10 +42,9 @@ public class MainpageTest {
       	long id = Thread.currentThread().getId();
       	System.out.println("Simple test-method Two. Thread id is: " + id);
       	boolean status = PageFactory.MainPage.checkEventSlider(browserName, driver);
-  		Assert.assertTrue(status, "Verification of main page menubar event slider status failed.");
-  		System.out.println("\nVerification of  main page menubar event slider status successful.");
+  		  Assert.assertTrue(status, "Verification of main page menubar event slider status failed.");
+  		  System.out.println("\nVerification of  main page menubar event slider status successful.");
     }
-
      
     @AfterTest
     public void tearDown() throws Exception {

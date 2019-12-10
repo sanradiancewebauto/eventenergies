@@ -7,6 +7,7 @@
 		<classes>
 			<class name="TestManager.MainpageTest">
 				<methods>
+
 					<exclude name="mainpage_menubar_element_display_test01"/>
 					<exclude name="mainpage_event_slider_display_test02"/>
 				</methods>
@@ -14,6 +15,7 @@
 			<class name="TestManager.LoginTest">
 				<methods>
 					<include name="verification_of_loginpage_element_view_test01"/>
+
 				</methods>
 			</class>
 		</classes>
