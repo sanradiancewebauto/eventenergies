@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 
 
 
-public class loginTest {
+public class LoginTest {
 	public static String browserName = "chrome";
 	public static WebDriver driver = null ;
 	static Logger log = LogManager.getLogger(LoginTest.class.getName());
