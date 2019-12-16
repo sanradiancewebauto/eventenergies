@@ -30,7 +30,7 @@ public class ChangePasswordPageElement {
 
 	public static String  SubmitButton="btn-blue-color";
 
-	public static String InvalidForm="//span[contains(.,'Current password is wrong')]";
+	public static String InvalidForm="//span[contains(.,'Current password is wrong')]";/////////////////////hdgshgc
 
 
 }
