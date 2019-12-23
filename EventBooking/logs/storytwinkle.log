@@ -89,3 +89,43 @@
 [INFO ] 2019-12-06 07:16:31.829 [main] LoginTest - Title match found.
 [INFO ] 2019-12-06 07:16:31.835 [main] LoginTest - Test run completed.
 [INFO ] 2019-12-06 07:16:31.836 [main] LoginTest - After test-method. Thread id is: 1
+[INFO ] 2019-12-19 10:34:59.258 [main] LoginTest - Executing test on thread id : 1 
+[INFO ] 2019-12-19 10:34:59.264 [main] LoginTest - Initialize setup before [LoginTest] test run.
+[INFO ] 2019-12-19 10:34:59.264 [main] LoginTest - Setting test browser as : chrome
+[INFO ] 2019-12-19 10:35:25.012 [main] LoginTest - Verification of LoginPage element view.
+[INFO ] 2019-12-19 10:35:25.015 [main] LoginPage - Step1: Navigate to the Login window from the Main page.
+[INFO ] 2019-12-19 10:35:35.157 [main] LoginPage - Step2: Verify login page visible after navigation.
+[INFO ] 2019-12-19 10:35:39.572 [main] LoginPage - Login page title displayed
+[ERROR] 2019-12-19 10:35:39.602 [main] LoginPage - Login page title text is Invalid
+[INFO ] 2019-12-19 10:35:39.615 [main] LoginTest - the map object is {Title=Login to get going., status=false}
+[INFO ] 2019-12-19 10:35:39.627 [main] LoginTest - Test run completed.
+[INFO ] 2019-12-19 10:35:39.627 [main] LoginTest - After test-method. Thread id is: 1
+[INFO ] 2019-12-19 10:36:22.661 [main] LoginTest - Executing test on thread id : 1 
+[INFO ] 2019-12-19 10:36:22.666 [main] LoginTest - Initialize setup before [LoginTest] test run.
+[INFO ] 2019-12-19 10:36:22.667 [main] LoginTest - Setting test browser as : chrome
+[INFO ] 2019-12-19 10:36:49.326 [main] LoginTest - Verification of LoginPage element view.
+[INFO ] 2019-12-19 10:36:49.329 [main] LoginPage - Step1: Navigate to the Login window from the Main page.
+[INFO ] 2019-12-19 10:36:59.524 [main] LoginPage - Step2: Verify login page visible after navigation.
+[INFO ] 2019-12-19 10:36:59.854 [main] LoginPage - Login page title displayed
+[ERROR] 2019-12-19 10:36:59.883 [main] LoginPage - Login page title text is Invalid
+[INFO ] 2019-12-19 10:36:59.900 [main] LoginTest - the map object is {Title=Login to get going., status=false}
+[INFO ] 2019-12-19 10:36:59.913 [main] LoginTest - Test run completed.
+[INFO ] 2019-12-19 10:36:59.914 [main] LoginTest - After test-method. Thread id is: 1
+[INFO ] 2019-12-19 10:43:01.164 [main] LoginTest - Executing test on thread id : 1 
+[INFO ] 2019-12-19 10:43:01.169 [main] LoginTest - Initialize setup before [LoginTest] test run.
+[INFO ] 2019-12-19 10:43:01.170 [main] LoginTest - Setting test browser as : chrome
+[INFO ] 2019-12-19 10:43:25.625 [main] LoginTest - Verification of LoginPage element view.
+[INFO ] 2019-12-19 10:43:25.630 [main] LoginPage - Step1: Navigate to the Login window from the Main page.
+[INFO ] 2019-12-19 10:43:35.676 [main] LoginTest - Test run completed.
+[INFO ] 2019-12-19 10:43:35.676 [main] LoginTest - After test-method. Thread id is: 1
+[INFO ] 2019-12-19 12:57:27.485 [main] LoginTest - Executing test on thread id : 1 
+[INFO ] 2019-12-19 12:57:27.491 [main] LoginTest - Initialize setup before [LoginTest] test run.
+[INFO ] 2019-12-19 12:57:27.491 [main] LoginTest - Setting test browser as : chrome
+[INFO ] 2019-12-19 12:57:58.065 [main] LoginTest - Verification of LoginPage element view.
+[INFO ] 2019-12-19 12:57:58.094 [main] LoginPage - Step1: Navigate to the Login window from the Main page.
+[INFO ] 2019-12-19 12:58:08.292 [main] LoginPage - Step2: Verify login page visible after navigation.
+[INFO ] 2019-12-19 12:58:08.615 [main] LoginPage - Login page title displayed
+[ERROR] 2019-12-19 12:58:08.660 [main] LoginPage - Login page title text is Invalid
+[INFO ] 2019-12-19 12:58:08.681 [main] LoginTest - the map object is {Title=Login to get going., status=false}
+[INFO ] 2019-12-19 12:58:08.695 [main] LoginTest - Test run completed.
+[INFO ] 2019-12-19 12:58:08.695 [main] LoginTest - After test-method. Thread id is: 1
