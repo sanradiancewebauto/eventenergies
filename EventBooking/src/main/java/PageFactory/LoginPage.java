@@ -19,7 +19,6 @@ public class LoginPage {
 	static Logger log = LogManager.getLogger(LoginPage.class.getName());
 	
 	public static Object userLoginElementDisplay(String browserName, WebDriver driver) throws InterruptedException {
-		// TODO Auto-generated method stub
 		returnValues.put("status","true");
 		log.info("Step1: Navigate to the Login window from the Main page.");
 		Thread.sleep(10000);

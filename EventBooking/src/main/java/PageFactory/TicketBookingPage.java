@@ -3,8 +3,11 @@ package PageFactory;
 import java.awt.AWTException;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
+//import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -12,31 +15,30 @@ import org.openqa.selenium.support.ui.Select;
 
 public class TicketBookingPage {
 	
+	public static boolean status = true;
+	static Logger log = LogManager.getLogger(LoginPage.class.getName());
 
-	public static WebElement BookTickets(String browserName, WebDriver driver) throws InterruptedException, AWTException {
+	public static boolean BookTickets(String browserName, WebDriver driver) throws InterruptedException, AWTException {
 		
-		JavascriptExecutor js = (JavascriptExecutor)driver;	
+		//JavascriptExecutor js = (JavascriptExecutor)driver;	
 		
-		 String handle= driver.getWindowHandle();
-		 
-         System.out.println(handle);
-
-		System.out.println("\nVerify the presence of Event");
+		log.info("\nVerify the presence of Event");
 		WebElement event = driver.findElement(By.xpath(ElementRepository.TicketBookingPageElement.Event));
 
 		if (event.isDisplayed() && event.isEnabled())
 		{
-			System.out.println("Register button is displayed and enabled.");
+			log.info("Register button is displayed and enabled.");
 			event.click();
 
 		}else {
-			System.out.println("Register button is not displayed nor enabled.");
+			log.info("Register button is not displayed nor enabled.");
 
 		}
 		
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		WebElement bookemail = driver.findElement(By.id(ElementRepository.TicketBookingPageElement.BookedByEmail));
 		bookemail.sendKeys("chaithra.s@sanradiance.com");
+		Thread.sleep(1000);
 		Select ticket = new Select(driver.findElement(By.name(ElementRepository.TicketBookingPageElement.TicketSelectField)));
 		ticket.selectByIndex(1);
 		WebElement bookTickets = driver.findElement(By.cssSelector(ElementRepository.TicketBookingPageElement.BookNow));
@@ -54,7 +56,7 @@ public class TicketBookingPage {
 		WebElement bookTickets1 = driver.findElement(By.cssSelector(ElementRepository.TicketBookingPageElement.BookNow));
 		bookTickets1.click();
 		Thread.sleep(1000);
-		System.out.println("\n verify first name");
+		log.info("\n verify first name");
 		WebElement fname = driver.findElement(By.xpath(ElementRepository.TicketBookingPageElement.AttendeeNameField));
 		fname.sendKeys("chaithra");
 		Thread.sleep(1000);
@@ -63,33 +65,31 @@ public class TicketBookingPage {
 		Thread.sleep(1000);
 		WebElement book = driver.findElement(By.cssSelector(ElementRepository.TicketBookingPageElement.BookTickets));
 		book.click();	
-		System.out.println();
-		
+		Thread.sleep(1000);
+		log.info("This is showing the model popup");
+		// Switching to the modle popup that is on the frame(0) - (active frame)
+		driver.switchTo().frame(0);
 		Thread.sleep(5000);
-		Set handles = driver.getWindowHandles();
-		System.out.println(handles);
-         for (String handle1 : driver.getWindowHandles()) {
-        	 System.out.println(handle1);
-        	 driver.switchTo().window(handle1);
-        	 Thread.sleep(5000);
-             WebElement pop = driver.findElement(By.xpath("//*[@id=\"form-common\"]"));
-             System.out.print("element found");
-     }
-         driver.close();
+		String popupHandle = driver.getWindowHandle();
+		log.info("The popup handle id is {}",popupHandle);
+		WebElement cardBtn = driver.findElement(By.cssSelector(ElementRepository.TicketBookingPageElement.cardBtn));
+		cardBtn.click();
+		Thread.sleep(1000);
+		WebElement skipCardText = driver.findElement(By.id(ElementRepository.TicketBookingPageElement.skipCard));
+		if (skipCardText.isEnabled()){
+			log.info("I do not have card OTP, skipping saved card.");
+			skipCardText.click();
+		}
+		
+        driver.close();
          
-//		driver.switchTo().frame(0);
-//	    driver.findElement(By.cssSelector(".p13n-instrument:nth-child(1) .svelte-sycrgz:nth-child(2) > div")).click();
-//	    driver.findElement(By.cssSelector("#footer > span")).click();
-         
-         
-         
-         System.out.println("completed");
+        log.info("completed");
          
          
-         // Close Original window
+        // Close Original window
  
          
-		return book;
+		return status;
 	     
 	}
 

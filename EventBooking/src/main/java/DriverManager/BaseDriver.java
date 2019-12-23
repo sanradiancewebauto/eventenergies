@@ -5,6 +5,8 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
@@ -20,10 +22,15 @@ public class BaseDriver {
 		try {
 			switch (browserName) {
 			case "firefox":
+				FirefoxProfile ffprofile = new FirefoxProfile();
+				ffprofile.setAcceptUntrustedCertificates(true);
+				FirefoxOptions options = new FirefoxOptions();
+	            options.setProfile(ffprofile);
 				// code to system props and instantiate the driver
 				System.setProperty("webdriver.gecko.driver", driverLocation + "geckodriver.exe");
 				// Instantiating driver object and launching browser
-				driver = new FirefoxDriver();
+				driver = new FirefoxDriver(options);
+				
 				break;
 			case "chrome":
 				// code to system props and instantiate the driver
@@ -65,5 +72,10 @@ public class BaseDriver {
 	public static void main() throws Exception {
 		getDriverConn("firefox");
 		System.out.println("I am at firefox");
+	}
+
+	@Override
+	public String toString() {
+		return "BaseDriver []";
 	}
 }

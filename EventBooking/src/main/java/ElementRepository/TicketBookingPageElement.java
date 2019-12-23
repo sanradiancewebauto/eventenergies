@@ -2,7 +2,7 @@ package ElementRepository;
 
 public class TicketBookingPageElement {
 	
-	public static String Event="/html/body/app-root/app-home-page/section[2]/div[1]/div[3]/div[4]/a/div/div[1]/div/img";//xpath
+	public static String Event="/html/body/app-root/app-home-page/section[2]/div[1]/div[3]/div[5]/a/div/div[1]/div/img";//xpath
 	public static String BookedByEmail ="email"; //id
 	public static String TicketSelectField="ticket_count"; //name 
 	public static String BookNow=".btn-primary"; //css
@@ -17,5 +17,8 @@ public class TicketBookingPageElement {
 	public static String password ="/html/body/app-root/app-login-page/div[1]/form/div/div[2]/div[2]/input";//xpath
 	public static String phone="//*[@id=\"payment-options\"]/div[1]/label";//id
 	public static String pay="/html/body/div[2]/div[4]/div/div[7]/div[2]/form/div[1]/div[1]/div/div/div[1]/div[3]/div/div/div[2]/div/button[1]/div/div";//xpath
+	public static String cardBtn="button.new-method:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1)"; //css
+	public static String skipCard = "otp-sec"; //id
 	
+
 }

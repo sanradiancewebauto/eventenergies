@@ -13,7 +13,12 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+   		<maven.compiler.source>1.8</maven.compiler.source>
+   		<maven.compiler.target>1.8</maven.compiler.target>
+   		<selectedTests>all-tests</selectedTests>
 	</properties>
+
+	
 
 	<dependencies>
 		
@@ -28,6 +33,18 @@
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
 			<version>3.141.0</version>
+		</dependency>
+		
+		<dependency>
+	        <groupId>org.seleniumhq.selenium</groupId>
+	        <artifactId>selenium-firefox-driver</artifactId>
+	        <version>3.141.0</version>
+    	</dependency>
+    	
+    	<dependency>
+		  <groupId>org.seleniumhq.selenium</groupId>
+		  <artifactId>selenium-chrome-driver</artifactId>
+		  <version>3.141.0</version>
 		</dependency>
 		
 		<dependency>
@@ -71,4 +88,6 @@
 		</dependency>
 
 	</dependencies>
+
+	
 </project>
