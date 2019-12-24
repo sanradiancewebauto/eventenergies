@@ -60,10 +60,10 @@ public class TicketBookingPage {
 		Thread.sleep(1000);
 		WebElement mobileNumber = driver.findElement(By.name(ElementRepository.TicketBookingPageElement.AttendeeMobileField));
 		mobileNumber.sendKeys("9986368808");
-		Thread.sleep(1000);
+		Thread.sleep(5000);
 		WebElement book = driver.findElement(By.cssSelector(ElementRepository.TicketBookingPageElement.BookTickets));
 		book.click();	
-		System.out.println();
+		System.out.println("clcked on book tickets");
 		
 		Thread.sleep(5000);
 		Set handles = driver.getWindowHandles();

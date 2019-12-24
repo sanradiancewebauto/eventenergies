@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="62427" started-at="2019-12-23T14:42:13Z" finished-at="2019-12-23T14:43:15Z">
+  <suite name="Default suite" duration-ms="58273" started-at="2019-12-23T14:50:26Z" finished-at="2019-12-23T14:51:24Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="62427" started-at="2019-12-23T14:42:13Z" finished-at="2019-12-23T14:43:15Z">
+    <test name="Default test" duration-ms="58273" started-at="2019-12-23T14:50:26Z" finished-at="2019-12-23T14:51:24Z">
       <class name="TestManager.TicketBookingTest">
-        <test-method status="FAIL" signature="test1()[pri:0, instance:TestManager.TicketBookingTest@68be2bc2]" name="test1" duration-ms="62372" started-at="2019-12-23T20:12:13Z" finished-at="2019-12-23T20:13:15Z">
+        <test-method status="FAIL" signature="test1()[pri:0, instance:TestManager.TicketBookingTest@68be2bc2]" name="test1" duration-ms="58236" started-at="2019-12-23T20:20:26Z" finished-at="2019-12-23T20:21:24Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="form-common"]"}
@@ -16,8 +16,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'
 System info: host: 'DESKTOP-C5RJ1HC', ip: '192.168.1.37', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_141'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\A\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:62699}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: fd0e9e41a9cf2a12a9b9e09ab5769672
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\A\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:62892}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 046524376814fd27f672e619538b6d3b
 *** Element info: {Using=xpath, value=//*[@id="form-common"]}]]>
             </message>
             <full-stacktrace>
@@ -27,8 +27,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'
 System info: host: 'DESKTOP-C5RJ1HC', ip: '192.168.1.37', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_141'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\A\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:62699}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: fd0e9e41a9cf2a12a9b9e09ab5769672
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\A\AppData\Local\Te...}, goog:chromeOptions: {debuggerAddress: localhost:62892}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 046524376814fd27f672e619538b6d3b
 *** Element info: {Using=xpath, value=//*[@id="form-common"]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -44,7 +44,7 @@ Session ID: fd0e9e41a9cf2a12a9b9e09ab5769672
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at PageFactory.TicketBookingPage.BookTickets(TicketBookingPage.java:75)
+	at PageFactory.TicketBookingPage.BookTickets(TicketBookingPage.java:76)
 	at TestManager.TicketBookingTest.test1(TicketBookingTest.java:25)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
