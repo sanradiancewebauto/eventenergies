@@ -26,15 +26,16 @@ public class LoginPageElements {
 	//Password
 	public static String LoginPassword="password";
 
-	public static String LoginPasswordlabel ="nth-child(2) .heading";
+	public static String LoginPasswordlabel ="div.row:nth-child(2) > div:nth-child(1) > label:nth-child(1)"; // css selector
 
 	public static String  RequiredPasswordError=".error-mez:nth-child(3)";
 
 	public static String  LoginPasswordVisible =".fa";
 
 	//Submit button
-	public static String loginButton = "//*[@id=\"Login\"]/div/div[3]/div/input";
-
+	public static String loginButton = "/html/body/app-root/app-login-page/div[1]/form/div/div[3]/div/input";//xpath
+	public static String userSetting = "/html/body/app-root/app-main-activity/app-main-navbar/div[1]/ul[2]/li[5]/a/i";//xpath
+	public static String userLogoutButton = "/html/body/app-root/app-main-activity/app-main-navbar/div[2]/ul/li[7]";//xpath
 	//Login with mobile number page
 	public static String  LoginWithMobile ="Or Sign in with mobile number";
 
