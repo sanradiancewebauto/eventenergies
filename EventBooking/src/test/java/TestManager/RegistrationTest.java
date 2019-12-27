@@ -9,7 +9,7 @@ import org.testng.annotations.BeforeTest;
 public class RegistrationTest {
 
 
-	public static String browserName = "chrome";
+	public static String browserName = "firefox";
 	public static WebDriver driver = null ;
 
 

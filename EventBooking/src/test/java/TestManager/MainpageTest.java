@@ -7,7 +7,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class MainpageTest {
-	public static String browserName = "chrome";
+	public static String browserName = "firefox";
 	public static WebDriver driver = null ;
 	
   

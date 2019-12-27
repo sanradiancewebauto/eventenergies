@@ -1,0 +1,851 @@
+[INFO ] 2019-12-24 11:29:51.240 [main] LoginTest - Executing test on thread id : 1 
+[INFO ] 2019-12-24 11:29:51.245 [main] LoginTest - Initialize setup before [TicketBookingTest] test run.
+[INFO ] 2019-12-24 11:29:51.246 [main] LoginTest - Setting test browser as : firefox
+[INFO ] 2019-12-24 11:30:15.194 [main] LoginTest - Verification of event booking payment.
+[INFO ] 2019-12-24 11:30:15.199 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 11:30:15.284 [main] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 11:30:22.168 [main] LoginTest - Test run completed.
+[INFO ] 2019-12-24 11:30:22.168 [main] LoginTest - After test-method. Thread id is: 1
+[INFO ] 2019-12-24 11:30:57.620 [main] LoginTest - Executing test on thread id : 1 
+[INFO ] 2019-12-24 11:30:57.639 [main] LoginTest - Initialize setup before [TicketBookingTest] test run.
+[INFO ] 2019-12-24 11:30:57.640 [main] LoginTest - Setting test browser as : firefox
+[INFO ] 2019-12-24 11:31:12.644 [main] LoginTest - Verification of event booking payment.
+[INFO ] 2019-12-24 11:31:12.650 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 11:31:12.739 [main] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 11:31:19.333 [main] LoginTest - Test run completed.
+[INFO ] 2019-12-24 11:31:19.334 [main] LoginTest - After test-method. Thread id is: 1
+[INFO ] 2019-12-24 11:31:59.721 [main] LoginTest - Executing test on thread id : 1 
+[INFO ] 2019-12-24 11:31:59.725 [main] LoginTest - Initialize setup before [TicketBookingTest] test run.
+[INFO ] 2019-12-24 11:31:59.726 [main] LoginTest - Setting test browser as : chrome
+[INFO ] 2019-12-24 11:32:19.105 [main] LoginTest - Verification of event booking payment.
+[INFO ] 2019-12-24 11:32:19.109 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 11:32:19.257 [main] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 11:32:29.379 [main] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 11:32:37.204 [main] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 11:32:42.287 [main] LoginPage - The popup handle id is CDwindow-90993EEDB4740D902A172B3B21585249
+[INFO ] 2019-12-24 11:32:43.503 [main] LoginPage - I do not have card OTP, skipping saved card.
+[INFO ] 2019-12-24 11:32:43.817 [main] LoginPage - completed
+[INFO ] 2019-12-24 11:32:43.817 [main] LoginTest - The test run status is true
+[INFO ] 2019-12-24 11:32:43.824 [main] LoginTest - Test run completed.
+[INFO ] 2019-12-24 11:32:43.824 [main] LoginTest - After test-method. Thread id is: 1
+[INFO ] 2019-12-24 11:37:13.897 [main] LoginTest - Executing test on thread id : 1 
+[INFO ] 2019-12-24 11:37:13.901 [main] LoginTest - Initialize setup before [TicketBookingTest] test run.
+[INFO ] 2019-12-24 11:37:13.902 [main] LoginTest - Setting test browser as : chrome
+[INFO ] 2019-12-24 11:37:32.244 [main] LoginTest - Verification of event booking payment.
+[INFO ] 2019-12-24 11:37:32.248 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 11:37:32.397 [main] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 11:37:42.877 [main] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 11:37:51.021 [main] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 11:37:56.053 [main] LoginPage - The popup handle id is CDwindow-68799E0285599F1A9BDDD7EC5F627DE6
+[INFO ] 2019-12-24 11:37:57.287 [main] LoginPage - I do not have card OTP, skipping saved card.
+[INFO ] 2019-12-24 11:38:07.331 [main] LoginTest - Test run completed.
+[INFO ] 2019-12-24 11:38:07.331 [main] LoginTest - After test-method. Thread id is: 1
+[INFO ] 2019-12-24 11:40:45.269 [main] LoginTest - Executing test on thread id : 1 
+[INFO ] 2019-12-24 11:40:45.273 [main] LoginTest - Initialize setup before [TicketBookingTest] test run.
+[INFO ] 2019-12-24 11:40:45.274 [main] LoginTest - Setting test browser as : chrome
+[INFO ] 2019-12-24 11:41:02.962 [main] LoginTest - Verification of event booking payment.
+[INFO ] 2019-12-24 11:41:02.965 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 11:41:05.045 [main] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 11:41:15.255 [main] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 11:41:23.520 [main] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 11:41:28.547 [main] LoginPage - The popup handle id is CDwindow-E277A829F83420422F914A04572430D9
+[INFO ] 2019-12-24 11:41:39.784 [main] LoginTest - Test run completed.
+[INFO ] 2019-12-24 11:41:39.784 [main] LoginTest - After test-method. Thread id is: 1
+[INFO ] 2019-12-24 11:44:44.793 [main] LoginTest - Executing test on thread id : 1 
+[INFO ] 2019-12-24 11:44:44.800 [main] LoginTest - Initialize setup before [TicketBookingTest] test run.
+[INFO ] 2019-12-24 11:44:44.801 [main] LoginTest - Setting test browser as : chrome
+[INFO ] 2019-12-24 11:45:04.817 [main] LoginTest - Verification of event booking payment.
+[INFO ] 2019-12-24 11:45:04.823 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 11:45:07.460 [main] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 11:45:17.020 [main] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 11:45:25.015 [main] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 11:45:30.043 [main] LoginPage - The popup handle id is CDwindow-00695EC118E5A4F27BAFBEA207820E5A
+[INFO ] 2019-12-24 11:45:31.247 [main] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 11:45:41.440 [main] LoginTest - Test run completed.
+[INFO ] 2019-12-24 11:45:41.440 [main] LoginTest - After test-method. Thread id is: 1
+[INFO ] 2019-12-24 11:48:30.921 [main] LoginTest - Executing test on thread id : 1 
+[INFO ] 2019-12-24 11:48:30.926 [main] LoginTest - Initialize setup before [TicketBookingTest] test run.
+[INFO ] 2019-12-24 11:48:30.927 [main] LoginTest - Setting test browser as : chrome
+[INFO ] 2019-12-24 11:48:48.653 [main] LoginTest - Verification of event booking payment.
+[INFO ] 2019-12-24 11:48:48.662 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 11:48:49.140 [main] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 11:49:04.820 [main] LoginTest - Test run completed.
+[INFO ] 2019-12-24 11:49:04.820 [main] LoginTest - After test-method. Thread id is: 1
+[INFO ] 2019-12-24 11:50:05.499 [main] LoginTest - Executing test on thread id : 1 
+[INFO ] 2019-12-24 11:50:05.504 [main] LoginTest - Initialize setup before [TicketBookingTest] test run.
+[INFO ] 2019-12-24 11:50:05.504 [main] LoginTest - Setting test browser as : chrome
+[INFO ] 2019-12-24 11:50:25.499 [main] LoginTest - Verification of event booking payment.
+[INFO ] 2019-12-24 11:50:25.502 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 11:50:25.683 [main] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 11:50:35.655 [main] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 11:50:43.723 [main] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 11:50:48.756 [main] LoginPage - The popup handle id is CDwindow-5E5C45E5403D53FE5553982462F49AEE
+[INFO ] 2019-12-24 11:50:49.964 [main] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 11:50:51.257 [main] LoginTest - Test run completed.
+[INFO ] 2019-12-24 11:50:51.257 [main] LoginTest - After test-method. Thread id is: 1
+[INFO ] 2019-12-24 11:53:21.538 [main] LoginTest - Executing test on thread id : 1 
+[INFO ] 2019-12-24 11:53:21.542 [main] LoginTest - Initialize setup before [TicketBookingTest] test run.
+[INFO ] 2019-12-24 11:53:21.543 [main] LoginTest - Setting test browser as : chrome
+[INFO ] 2019-12-24 11:53:45.403 [main] LoginTest - Executing test on thread id : 1 
+[INFO ] 2019-12-24 11:53:45.408 [main] LoginTest - Initialize setup before [TicketBookingTest] test run.
+[INFO ] 2019-12-24 11:53:45.408 [main] LoginTest - Setting test browser as : chrome
+[INFO ] 2019-12-24 11:54:05.680 [main] LoginTest - Verification of event booking payment.
+[INFO ] 2019-12-24 11:54:05.683 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 11:54:06.089 [main] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 11:54:17.891 [main] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 11:54:26.291 [main] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 11:54:31.329 [main] LoginPage - The popup handle id is CDwindow-B37948B402EBA1856C363F90AA614792
+[INFO ] 2019-12-24 11:54:32.531 [main] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 11:54:33.856 [main] LoginPage - pay Button is enabled and disabled
+[INFO ] 2019-12-24 11:54:34.106 [main] LoginPage - I do not have card OTP, skipping saved card.
+[INFO ] 2019-12-24 11:54:44.156 [main] LoginTest - Test run completed.
+[INFO ] 2019-12-24 11:54:44.156 [main] LoginTest - After test-method. Thread id is: 1
+[INFO ] 2019-12-24 12:08:37.827 [main] LoginTest - Executing test on thread id : 1 
+[INFO ] 2019-12-24 12:08:37.831 [main] LoginTest - Initialize setup before [TicketBookingTest] test run.
+[INFO ] 2019-12-24 12:08:37.832 [main] LoginTest - Setting test browser as : chrome
+[INFO ] 2019-12-24 12:08:56.645 [main] LoginTest - Verification of event booking payment.
+[INFO ] 2019-12-24 12:08:56.648 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 12:08:56.808 [main] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 12:09:06.963 [main] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 12:09:14.636 [main] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 12:09:19.666 [main] LoginPage - The popup handle id is CDwindow-B756D6BC9165BCB83A72DF5F689E54E5
+[INFO ] 2019-12-24 12:09:20.877 [main] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 12:09:22.195 [main] LoginPage - pay Button is enabled and disabled
+[INFO ] 2019-12-24 12:09:22.370 [main] LoginPage - I do not have card OTP, skipping saved card.
+[INFO ] 2019-12-24 12:09:32.433 [main] LoginTest - Test run completed.
+[INFO ] 2019-12-24 12:09:32.433 [main] LoginTest - After test-method. Thread id is: 1
+[INFO ] 2019-12-24 12:13:08.231 [main] LoginTest - Executing test on thread id : 1 
+[INFO ] 2019-12-24 12:13:08.235 [main] LoginTest - Initialize setup before [TicketBookingTest] test run.
+[INFO ] 2019-12-24 12:13:08.236 [main] LoginTest - Setting test browser as : chrome
+[INFO ] 2019-12-24 12:16:43.582 [main] LoginTest - Executing test on thread id : 1 
+[INFO ] 2019-12-24 12:16:43.587 [main] LoginTest - Initialize setup before [TicketBookingTest] test run.
+[INFO ] 2019-12-24 12:16:43.588 [main] LoginTest - Setting test browser as : chrome
+[INFO ] 2019-12-24 12:17:01.552 [main] LoginTest - Verification of event booking payment.
+[INFO ] 2019-12-24 12:17:01.555 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 12:17:01.681 [main] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 12:17:11.669 [main] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 12:17:21.730 [main] LoginTest - Verification of event booking payment.
+[INFO ] 2019-12-24 12:17:21.731 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 12:17:31.783 [main] LoginTest - Verification of event booking payment.
+[INFO ] 2019-12-24 12:17:31.784 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 12:17:41.799 [main] LoginTest - Verification of event booking payment.
+[INFO ] 2019-12-24 12:17:41.799 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 12:17:51.835 [main] LoginTest - Verification of event booking payment.
+[INFO ] 2019-12-24 12:17:51.836 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 12:18:01.867 [main] LoginTest - Verification of event booking payment.
+[INFO ] 2019-12-24 12:18:01.868 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 12:18:11.906 [main] LoginTest - Verification of event booking payment.
+[INFO ] 2019-12-24 12:18:11.906 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 12:18:21.932 [main] LoginTest - Verification of event booking payment.
+[INFO ] 2019-12-24 12:18:21.933 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 12:18:31.963 [main] LoginTest - Verification of event booking payment.
+[INFO ] 2019-12-24 12:18:31.963 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 12:18:41.983 [main] LoginTest - Verification of event booking payment.
+[INFO ] 2019-12-24 12:18:41.983 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 12:18:51.999 [main] LoginTest - Test run completed.
+[INFO ] 2019-12-24 12:18:52.000 [main] LoginTest - After test-method. Thread id is: 1
+[INFO ] 2019-12-24 12:22:16.860 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 12:22:16.965 [main] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 12:22:32.124 [main] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 12:22:45.353 [main] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 12:22:50.378 [main] LoginPage - The popup handle id is CDwindow-0FB0FB0550C0CD378AD9EB31F31D67D6
+[INFO ] 2019-12-24 12:22:56.646 [main] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 12:28:49.234 [main] LoginTest - Executing test on thread id : 1 
+[INFO ] 2019-12-24 12:28:49.239 [main] LoginTest - Initialize setup before [TicketBookingTest] test run.
+[INFO ] 2019-12-24 12:28:49.240 [main] LoginTest - Setting test browser as : chrome
+[INFO ] 2019-12-24 12:29:02.581 [main] LoginTest - Verification of event booking payment.
+[INFO ] 2019-12-24 12:29:10.376 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 12:29:10.533 [main] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 12:29:20.401 [main] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 12:29:28.891 [main] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 12:29:33.916 [main] LoginPage - The popup handle id is CDwindow-C4B2BEEF97C5F6A636947F90804B8834
+[INFO ] 2019-12-24 12:29:35.120 [main] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 12:29:36.449 [main] LoginPage - pay Button is enabled and disabled
+[INFO ] 2019-12-24 12:29:36.759 [main] LoginPage - completed
+[INFO ] 2019-12-24 12:29:36.760 [main] LoginTest - The test run status is true
+[INFO ] 2019-12-24 12:29:36.765 [main] LoginTest - Test run completed.
+[INFO ] 2019-12-24 12:29:36.766 [main] LoginTest - After test-method. Thread id is: 1
+[INFO ] 2019-12-24 12:31:50.786 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 12:31:51.606 [main] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 12:32:01.608 [main] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 12:32:10.461 [main] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 12:32:15.503 [main] LoginPage - The popup handle id is CDwindow-DAE5A0882C53B992526F02174761FF68
+[INFO ] 2019-12-24 12:32:16.739 [main] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 12:32:18.081 [main] LoginPage - pay Button is enabled and disabled
+[INFO ] 2019-12-24 12:32:18.208 [main] LoginPage - completed
+[INFO ] 2019-12-24 12:38:30.432 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 12:38:30.642 [main] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 12:38:41.480 [main] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 12:38:50.187 [main] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 12:38:55.234 [main] LoginPage - The popup handle id is CDwindow-F280ADB4D9A3590AF2157F75D47CEED5
+[INFO ] 2019-12-24 12:38:56.585 [main] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 12:38:57.948 [main] LoginPage - pay Button is enabled and disabled
+[INFO ] 2019-12-24 12:38:58.184 [main] LoginPage - completed
+[INFO ] 2019-12-24 12:39:14.141 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 12:39:14.225 [main] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 12:39:43.112 [main] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 12:39:55.968 [main] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 12:40:00.993 [main] LoginPage - The popup handle id is CDwindow-0AAE7F4F91A2C56AB7C780358E7EF775
+[INFO ] 2019-12-24 12:40:20.490 [TestNG] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 12:40:23.160 [TestNG] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 12:48:39.236 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 12:48:39.474 [main] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 12:48:49.175 [main] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 12:48:58.068 [main] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 12:49:03.099 [main] LoginPage - The popup handle id is CDwindow-A4673E708316B9F60D792AE030CE5236
+[INFO ] 2019-12-24 12:49:04.304 [main] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 12:49:05.670 [main] LoginPage - pay Button is enabled and disabled
+[INFO ] 2019-12-24 12:49:05.823 [main] LoginPage - completed
+[INFO ] 2019-12-24 12:51:32.478 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 12:51:32.631 [main] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 12:51:42.901 [main] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 12:51:51.406 [main] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 12:51:56.436 [main] LoginPage - The popup handle id is CDwindow-4E58E926283486816CFD3770926211F1
+[INFO ] 2019-12-24 12:51:57.642 [main] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 12:51:59.033 [main] LoginPage - pay Button is enabled and disabled
+[INFO ] 2019-12-24 12:51:59.275 [main] LoginPage - completed
+[INFO ] 2019-12-24 12:57:50.291 [pool-1-thread-1] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 12:57:50.291 [pool-1-thread-3] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 12:57:50.291 [pool-1-thread-4] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 12:57:50.291 [pool-1-thread-2] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 12:57:51.167 [pool-1-thread-2] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 12:57:51.227 [pool-1-thread-4] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 12:57:51.242 [pool-1-thread-1] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 12:57:51.242 [pool-1-thread-3] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 12:58:07.797 [pool-1-thread-2] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 12:58:09.406 [pool-1-thread-4] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 12:58:09.479 [pool-1-thread-1] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 12:58:09.521 [pool-1-thread-3] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 12:58:17.564 [pool-1-thread-2] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 12:58:18.929 [pool-1-thread-3] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 12:58:18.931 [pool-1-thread-1] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 12:58:22.739 [pool-1-thread-2] LoginPage - The popup handle id is CDwindow-1E8D82D99067F8C1D0B36C959DFC55C2
+[INFO ] 2019-12-24 12:58:24.067 [pool-1-thread-2] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 12:58:24.677 [pool-1-thread-3] LoginPage - The popup handle id is CDwindow-2CBFF142C7F1C5B2423FA580652FCA0A
+[INFO ] 2019-12-24 12:58:24.677 [pool-1-thread-1] LoginPage - The popup handle id is CDwindow-4D62DC4AA6DD4BBF9F1ECA64D6BBF01F
+[INFO ] 2019-12-24 12:58:25.474 [pool-1-thread-2] LoginPage - pay Button is enabled and disabled
+[INFO ] 2019-12-24 12:58:25.600 [pool-1-thread-2] LoginPage - completed
+[INFO ] 2019-12-24 12:58:25.979 [pool-1-thread-1] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 12:58:25.979 [pool-1-thread-3] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 12:58:27.427 [pool-1-thread-1] LoginPage - pay Button is enabled and disabled
+[INFO ] 2019-12-24 12:58:27.511 [pool-1-thread-3] LoginPage - pay Button is enabled and disabled
+[INFO ] 2019-12-24 12:58:27.715 [pool-1-thread-3] LoginPage - completed
+[INFO ] 2019-12-24 12:58:27.731 [pool-1-thread-1] LoginPage - completed
+[INFO ] 2019-12-24 13:08:59.401 [pool-1-thread-4] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 13:08:59.401 [pool-1-thread-3] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 13:08:59.401 [pool-1-thread-1] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 13:08:59.401 [pool-1-thread-2] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 13:09:04.766 [pool-1-thread-3] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 13:09:04.766 [pool-1-thread-4] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 13:09:04.772 [pool-1-thread-2] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 13:09:04.772 [pool-1-thread-1] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 13:09:24.410 [pool-1-thread-2] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 13:09:25.410 [pool-1-thread-3] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 13:09:25.447 [pool-1-thread-1] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 13:09:25.450 [pool-1-thread-4] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 13:09:34.737 [pool-1-thread-2] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 13:09:34.815 [pool-1-thread-1] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 13:09:34.819 [pool-1-thread-3] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 13:09:39.930 [pool-1-thread-2] LoginPage - The popup handle id is CDwindow-00AB551E4DCB8E91CFD02AD09FA4FA51
+[INFO ] 2019-12-24 13:09:39.991 [pool-1-thread-1] LoginPage - The popup handle id is CDwindow-2FBABD777C3599127075F1B47F37976D
+[INFO ] 2019-12-24 13:09:39.991 [pool-1-thread-3] LoginPage - The popup handle id is CDwindow-6F1961DC2DDEBA5DE8AF7F5C8061BCF8
+[INFO ] 2019-12-24 13:09:41.383 [pool-1-thread-2] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 13:09:41.418 [pool-1-thread-1] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 13:09:41.467 [pool-1-thread-3] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 13:09:43.114 [pool-1-thread-2] LoginPage - pay Button is enabled and disabled
+[INFO ] 2019-12-24 13:09:43.171 [pool-1-thread-3] LoginPage - pay Button is enabled and disabled
+[INFO ] 2019-12-24 13:09:43.182 [pool-1-thread-1] LoginPage - pay Button is enabled and disabled
+[INFO ] 2019-12-24 13:09:44.431 [pool-1-thread-1] LoginPage - completed
+[INFO ] 2019-12-24 13:09:44.447 [pool-1-thread-2] LoginPage - completed
+[INFO ] 2019-12-24 13:09:44.658 [pool-1-thread-3] LoginPage - completed
+[INFO ] 2019-12-24 13:11:57.513 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 13:11:57.643 [main] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 13:12:06.980 [main] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 13:12:45.567 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 13:12:45.719 [main] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 13:12:56.698 [main] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 13:13:05.562 [main] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 13:13:10.602 [main] LoginPage - The popup handle id is CDwindow-E9F323A6A8D65141A002ED9FBD042BFD
+[INFO ] 2019-12-24 13:13:11.831 [main] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 13:13:13.193 [main] LoginPage - pay Button is enabled and disabled
+[INFO ] 2019-12-24 13:13:13.433 [main] LoginPage - completed
+[INFO ] 2019-12-24 13:13:25.099 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 13:15:02.786 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 13:15:38.199 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 13:15:40.841 [pool-1-thread-2] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 13:15:42.208 [pool-1-thread-3] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 13:15:46.234 [pool-1-thread-4] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 13:15:48.157 [pool-1-thread-1] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 13:16:19.925 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 13:18:38.793 [pool-1-thread-4] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 13:18:38.793 [pool-1-thread-1] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 13:18:38.793 [pool-1-thread-3] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 13:18:38.793 [pool-1-thread-2] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 13:22:40.891 [pool-1-thread-1] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 13:22:40.891 [pool-1-thread-4] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 13:22:40.891 [pool-1-thread-2] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 13:22:40.891 [pool-1-thread-3] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 13:22:46.660 [pool-1-thread-4] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 13:22:46.660 [pool-1-thread-1] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 13:22:46.676 [pool-1-thread-2] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 13:22:46.688 [pool-1-thread-3] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 13:23:20.881 [pool-1-thread-4] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 13:23:30.005 [pool-1-thread-4] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 13:23:31.438 [pool-1-thread-1] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 13:23:31.648 [pool-1-thread-2] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 13:23:31.704 [pool-1-thread-3] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 13:23:35.070 [pool-1-thread-4] LoginPage - The popup handle id is CDwindow-8097CF796E0979B7A0D1ABC9C1ED352D
+[INFO ] 2019-12-24 13:23:46.732 [pool-1-thread-2] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 13:23:48.619 [pool-1-thread-1] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 13:23:49.266 [pool-1-thread-3] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 13:23:51.764 [pool-1-thread-2] LoginPage - The popup handle id is CDwindow-56DACB5D27A31002CF6BD79F27232FDE
+[INFO ] 2019-12-24 13:23:53.915 [pool-1-thread-1] LoginPage - The popup handle id is CDwindow-83110ED36D64FB981A7599D2D639FB7B
+[INFO ] 2019-12-24 13:23:54.303 [pool-1-thread-3] LoginPage - The popup handle id is CDwindow-97F892CEA7505697CF3967041CEF5C41
+[INFO ] 2019-12-24 13:36:19.874 [pool-1-thread-3] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 13:36:19.886 [pool-1-thread-2] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 13:36:19.882 [pool-1-thread-4] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 13:36:19.882 [pool-1-thread-1] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 13:36:22.612 [pool-1-thread-4] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 13:36:22.612 [pool-1-thread-1] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 13:36:22.620 [pool-1-thread-3] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 13:36:22.626 [pool-1-thread-2] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 13:36:41.199 [pool-1-thread-3] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 13:36:41.487 [pool-1-thread-4] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 13:36:41.987 [pool-1-thread-1] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 13:36:42.442 [pool-1-thread-2] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 13:36:50.671 [pool-1-thread-3] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 13:36:50.961 [pool-1-thread-4] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 13:36:51.809 [pool-1-thread-1] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 13:36:52.572 [pool-1-thread-2] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 13:36:55.992 [pool-1-thread-4] LoginPage - The popup handle id is CDwindow-C9CA1A3B2F2287E1F58FC252677AD1D2
+[INFO ] 2019-12-24 13:36:56.838 [pool-1-thread-1] LoginPage - The popup handle id is CDwindow-D617436A9FCD0D8CD20D8AC86249F67E
+[INFO ] 2019-12-24 13:36:57.622 [pool-1-thread-2] LoginPage - The popup handle id is CDwindow-9AD582B7FD911C5E16E2435CBF161B03
+[INFO ] 2019-12-24 14:36:57.325 [pool-1-thread-3] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 14:36:57.325 [pool-1-thread-2] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 14:36:57.325 [pool-1-thread-4] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 14:36:57.325 [pool-1-thread-1] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 14:37:03.606 [pool-1-thread-2] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 14:37:03.634 [pool-1-thread-3] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 14:37:03.635 [pool-1-thread-4] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 14:37:03.639 [pool-1-thread-1] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 14:37:20.452 [pool-1-thread-2] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 14:37:20.565 [pool-1-thread-3] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 14:37:20.761 [pool-1-thread-4] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 14:37:20.797 [pool-1-thread-1] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 14:37:31.252 [pool-1-thread-4] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 14:37:31.252 [pool-1-thread-2] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 14:37:33.236 [pool-1-thread-3] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 14:37:34.520 [pool-1-thread-1] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 14:37:36.762 [pool-1-thread-2] LoginPage - The popup handle id is CDwindow-BB63C219427A2516FE29D5677EB086FC
+[INFO ] 2019-12-24 14:37:36.762 [pool-1-thread-4] LoginPage - The popup handle id is CDwindow-94CB88941E1D2703C56AC6C7A6DD7F3B
+[INFO ] 2019-12-24 14:37:38.156 [pool-1-thread-2] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 14:37:38.234 [pool-1-thread-4] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 14:37:38.306 [pool-1-thread-3] LoginPage - The popup handle id is CDwindow-5820DFF12049CD85E32AD417F5B231F1
+[INFO ] 2019-12-24 14:37:39.553 [pool-1-thread-1] LoginPage - The popup handle id is CDwindow-C93E277DB2E9FDD80EE59E86FA7049C2
+[INFO ] 2019-12-24 14:37:39.691 [pool-1-thread-3] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 14:37:39.891 [pool-1-thread-4] LoginPage - pay Button is enabled and disabled
+[INFO ] 2019-12-24 14:37:39.891 [pool-1-thread-2] LoginPage - pay Button is enabled and disabled
+[INFO ] 2019-12-24 14:37:40.852 [pool-1-thread-1] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 14:37:41.163 [pool-1-thread-3] LoginPage - pay Button is enabled and disabled
+[INFO ] 2019-12-24 14:37:42.253 [pool-1-thread-1] LoginPage - pay Button is enabled and disabled
+[INFO ] 2019-12-24 14:37:45.828 [pool-1-thread-1] LoginPage - completed
+[INFO ] 2019-12-24 14:37:46.080 [pool-1-thread-3] LoginPage - completed
+[INFO ] 2019-12-24 14:37:47.893 [pool-1-thread-2] LoginPage - completed
+[INFO ] 2019-12-24 14:37:47.893 [pool-1-thread-4] LoginPage - completed
+[INFO ] 2019-12-24 14:41:59.003 [pool-1-thread-2] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 14:41:59.003 [pool-1-thread-1] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 14:41:59.003 [pool-1-thread-4] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 14:41:59.003 [pool-1-thread-3] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 14:41:59.944 [pool-1-thread-4] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 14:41:59.948 [pool-1-thread-2] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 14:41:59.952 [pool-1-thread-3] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 14:42:05.122 [pool-1-thread-1] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 14:42:14.877 [pool-1-thread-2] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 14:42:14.902 [pool-1-thread-3] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 14:42:15.531 [pool-1-thread-4] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 14:42:21.916 [pool-1-thread-1] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 14:42:26.187 [pool-1-thread-3] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 14:42:26.334 [pool-1-thread-4] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 14:42:26.366 [pool-1-thread-2] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 14:42:31.437 [pool-1-thread-3] LoginPage - The popup handle id is CDwindow-F96E49F4CD290DA86516C6CF158A9C8D
+[INFO ] 2019-12-24 14:42:31.583 [pool-1-thread-4] LoginPage - The popup handle id is CDwindow-18987891D181ED6E931EF2496AFCBB33
+[INFO ] 2019-12-24 14:42:31.587 [pool-1-thread-2] LoginPage - The popup handle id is CDwindow-FC9904F1939C9ABA5F45E975113E8180
+[INFO ] 2019-12-24 14:42:32.723 [pool-1-thread-3] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 14:42:33.007 [pool-1-thread-4] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 14:42:33.019 [pool-1-thread-2] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 14:42:33.175 [pool-1-thread-1] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 14:42:34.204 [pool-1-thread-3] LoginPage - pay Button is enabled and disabled
+[INFO ] 2019-12-24 14:42:34.592 [pool-1-thread-3] LoginPage - completed
+[INFO ] 2019-12-24 14:42:34.748 [pool-1-thread-4] LoginPage - pay Button is enabled and disabled
+[INFO ] 2019-12-24 14:42:34.760 [pool-1-thread-2] LoginPage - pay Button is enabled and disabled
+[INFO ] 2019-12-24 14:42:35.231 [pool-1-thread-4] LoginPage - completed
+[INFO ] 2019-12-24 14:42:35.248 [pool-1-thread-2] LoginPage - completed
+[INFO ] 2019-12-24 14:42:38.222 [pool-1-thread-1] LoginPage - The popup handle id is CDwindow-DC991A89961AD34010375404ED820FBB
+[INFO ] 2019-12-24 14:42:39.473 [pool-1-thread-1] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 14:42:40.853 [pool-1-thread-1] LoginPage - pay Button is enabled and disabled
+[INFO ] 2019-12-24 14:42:41.144 [pool-1-thread-1] LoginPage - completed
+[INFO ] 2019-12-24 14:43:47.815 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 14:43:47.983 [main] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 14:44:42.092 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 14:44:43.611 [main] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 14:45:16.284 [main] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 14:45:58.243 [pool-1-thread-3] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 14:45:58.243 [pool-1-thread-1] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 14:45:58.243 [pool-1-thread-2] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 14:45:58.243 [pool-1-thread-4] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 14:45:59.539 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 14:53:05.891 [pool-1-thread-3] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 14:53:05.891 [pool-1-thread-4] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 14:53:05.891 [pool-1-thread-1] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 14:53:05.891 [pool-1-thread-2] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 14:53:07.043 [pool-1-thread-2] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 14:53:07.043 [pool-1-thread-3] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 14:53:07.049 [pool-1-thread-4] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 14:53:07.059 [pool-1-thread-1] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 14:53:23.793 [pool-1-thread-2] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 14:53:24.026 [pool-1-thread-4] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 14:53:24.291 [pool-1-thread-1] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 14:53:24.388 [pool-1-thread-3] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 14:53:33.661 [pool-1-thread-4] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 14:53:34.542 [pool-1-thread-3] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 14:53:34.764 [pool-1-thread-2] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 14:53:35.564 [pool-1-thread-1] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 14:53:38.762 [pool-1-thread-4] LoginPage - The popup handle id is CDwindow-0290E80BE7D64905358386B052B210EA
+[INFO ] 2019-12-24 14:53:39.643 [pool-1-thread-3] LoginPage - The popup handle id is CDwindow-6971D03D281D8743A056F98D1FD80E09
+[INFO ] 2019-12-24 14:53:39.827 [pool-1-thread-2] LoginPage - The popup handle id is CDwindow-677C5DA4EFB5F68E3FC06431B6599ABD
+[INFO ] 2019-12-24 14:53:40.531 [pool-1-thread-4] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 14:53:40.591 [pool-1-thread-1] LoginPage - The popup handle id is CDwindow-D80DA11531C9E6FBF055C421E7BD79D4
+[INFO ] 2019-12-24 14:53:41.066 [pool-1-thread-3] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 14:53:41.228 [pool-1-thread-2] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 14:53:42.029 [pool-1-thread-1] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 14:53:42.050 [pool-1-thread-4] LoginPage - pay Button is enabled and disabled
+[INFO ] 2019-12-24 14:53:42.212 [pool-1-thread-4] LoginPage - completed
+[INFO ] 2019-12-24 14:53:42.640 [pool-1-thread-3] LoginPage - pay Button is enabled and disabled
+[INFO ] 2019-12-24 14:53:42.756 [pool-1-thread-2] LoginPage - pay Button is enabled and disabled
+[INFO ] 2019-12-24 14:53:42.815 [pool-1-thread-3] LoginPage - completed
+[INFO ] 2019-12-24 14:53:42.961 [pool-1-thread-2] LoginPage - completed
+[INFO ] 2019-12-24 14:53:43.461 [pool-1-thread-1] LoginPage - pay Button is enabled and disabled
+[INFO ] 2019-12-24 14:53:43.665 [pool-1-thread-1] LoginPage - completed
+[INFO ] 2019-12-24 15:04:40.720 [pool-1-thread-1] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 15:08:28.020 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 15:08:28.141 [main] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 15:08:37.589 [main] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 15:08:45.562 [main] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 15:08:50.620 [main] LoginPage - The popup handle id is CDwindow-F992E8909BA75E00A98EF8F104B34B0C
+[INFO ] 2019-12-24 15:08:51.848 [main] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 15:08:53.163 [main] LoginPage - pay Button is enabled and disabled
+[INFO ] 2019-12-24 15:08:53.163 [main] LoginPage - completed
+[INFO ] 2019-12-24 15:09:12.448 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 15:09:12.530 [main] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 15:16:10.156 [pool-1-thread-7] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 15:16:10.156 [pool-1-thread-9] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 15:16:49.679 [main] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 15:17:07.802 [pool-1-thread-9] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 15:17:35.385 [main] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 15:17:40.854 [main] LoginPage - The popup handle id is CDwindow-9322E524BBA65DF330418E74F9B8727A
+[INFO ] 2019-12-24 15:17:53.660 [pool-1-thread-9] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 15:17:55.368 [main] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 15:18:00.662 [main] LoginPage - pay Button is enabled and disabled
+[INFO ] 2019-12-24 15:18:00.662 [main] LoginPage - completed
+[INFO ] 2019-12-24 15:18:05.676 [pool-1-thread-9] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 15:18:11.183 [pool-1-thread-9] LoginPage - The popup handle id is CDwindow-275187C44F450B67BE1BDDD5C83A28CA
+[INFO ] 2019-12-24 15:18:15.728 [pool-1-thread-9] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 15:18:23.065 [pool-1-thread-9] LoginPage - pay Button is enabled and disabled
+[INFO ] 2019-12-24 15:18:23.066 [pool-1-thread-9] LoginPage - completed
+[INFO ] 2019-12-24 15:19:28.264 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 15:19:42.377 [main] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 15:47:56.617 [pool-1-thread-1] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 15:47:56.617 [pool-1-thread-2] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 15:47:56.617 [pool-1-thread-4] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 15:47:56.617 [pool-1-thread-5] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 15:47:56.617 [pool-1-thread-3] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 15:47:57.843 [pool-1-thread-3] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 15:47:58.151 [pool-1-thread-4] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 15:47:58.190 [pool-1-thread-1] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 15:47:58.193 [pool-1-thread-2] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 15:47:58.199 [pool-1-thread-5] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 15:51:43.097 [pool-1-thread-1] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 15:51:43.099 [pool-1-thread-5] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 15:51:43.099 [pool-1-thread-2] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 15:51:43.099 [pool-1-thread-4] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 15:51:43.099 [pool-1-thread-3] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 15:51:50.752 [pool-1-thread-5] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 15:51:50.755 [pool-1-thread-1] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 15:51:50.782 [pool-1-thread-2] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 15:51:50.790 [pool-1-thread-3] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 15:51:50.797 [pool-1-thread-4] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 15:52:14.835 [pool-1-thread-5] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 15:52:15.206 [pool-1-thread-3] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 15:52:15.236 [pool-1-thread-2] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 15:52:15.518 [pool-1-thread-1] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 15:52:15.520 [pool-1-thread-4] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 15:52:32.066 [pool-1-thread-3] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 15:52:32.081 [pool-1-thread-5] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 15:52:32.087 [pool-1-thread-1] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 15:52:32.154 [pool-1-thread-2] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 15:52:32.206 [pool-1-thread-4] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 15:52:37.228 [pool-1-thread-1] LoginPage - The popup handle id is CDwindow-E1C4BF4FCFA41C26571A7445BC4FF7F0
+[INFO ] 2019-12-24 15:52:37.439 [pool-1-thread-3] LoginPage - The popup handle id is CDwindow-161C5E40D9292D4D1555CF36275A5D96
+[INFO ] 2019-12-24 15:52:37.454 [pool-1-thread-5] LoginPage - The popup handle id is CDwindow-8335E89C761CE073CFF0D382A771947F
+[INFO ] 2019-12-24 15:52:37.536 [pool-1-thread-2] LoginPage - The popup handle id is CDwindow-BBEA9A0526023D145796992A9463C996
+[INFO ] 2019-12-24 15:52:37.614 [pool-1-thread-4] LoginPage - The popup handle id is CDwindow-D28ACA623A35D5F8DB2CCE0AAD35171E
+[INFO ] 2019-12-24 15:52:38.532 [pool-1-thread-1] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 15:52:38.938 [pool-1-thread-3] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 15:52:39.021 [pool-1-thread-5] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 15:52:39.175 [pool-1-thread-2] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 15:52:39.336 [pool-1-thread-4] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 15:52:39.915 [pool-1-thread-1] LoginPage - pay Button is enabled and disabled
+[INFO ] 2019-12-24 15:52:39.915 [pool-1-thread-1] LoginPage - completed
+[INFO ] 2019-12-24 15:52:40.689 [pool-1-thread-3] LoginPage - pay Button is enabled and disabled
+[INFO ] 2019-12-24 15:52:40.689 [pool-1-thread-3] LoginPage - completed
+[INFO ] 2019-12-24 15:52:40.702 [pool-1-thread-5] LoginPage - pay Button is enabled and disabled
+[INFO ] 2019-12-24 15:52:40.702 [pool-1-thread-5] LoginPage - completed
+[INFO ] 2019-12-24 15:52:40.787 [pool-1-thread-2] LoginPage - pay Button is enabled and disabled
+[INFO ] 2019-12-24 15:52:40.787 [pool-1-thread-2] LoginPage - completed
+[INFO ] 2019-12-24 15:52:40.881 [pool-1-thread-4] LoginPage - pay Button is enabled and disabled
+[INFO ] 2019-12-24 15:52:40.882 [pool-1-thread-4] LoginPage - completed
+[INFO ] 2019-12-24 16:03:00.409 [pool-1-thread-3] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 16:03:00.422 [pool-1-thread-4] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 16:03:00.424 [pool-1-thread-5] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 16:03:00.418 [pool-1-thread-2] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 16:03:00.416 [pool-1-thread-1] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 16:03:02.538 [pool-1-thread-5] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 16:03:02.542 [pool-1-thread-2] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 16:03:02.549 [pool-1-thread-1] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 16:03:02.567 [pool-1-thread-3] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 16:03:02.571 [pool-1-thread-4] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 16:03:24.939 [pool-1-thread-4] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 16:03:26.706 [pool-1-thread-2] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 16:03:26.711 [pool-1-thread-5] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 16:03:26.711 [pool-1-thread-3] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 16:03:26.871 [pool-1-thread-1] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 16:03:37.565 [pool-1-thread-4] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 16:03:39.060 [pool-1-thread-1] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 16:03:39.073 [pool-1-thread-2] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 16:03:39.121 [pool-1-thread-3] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 16:03:39.248 [pool-1-thread-5] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 16:03:42.782 [pool-1-thread-4] LoginPage - The popup handle id is CDwindow-D00E346373CB2CAD0FBA432558BDEB4B
+[INFO ] 2019-12-24 16:03:44.041 [pool-1-thread-4] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 16:03:44.144 [pool-1-thread-1] LoginPage - The popup handle id is CDwindow-ADD2D26106F6E52FFABCE546AE5D3C52
+[INFO ] 2019-12-24 16:03:44.270 [pool-1-thread-2] LoginPage - The popup handle id is CDwindow-328D41C882EDCBE5F3CEBBAA0A55343C
+[INFO ] 2019-12-24 16:03:44.296 [pool-1-thread-3] LoginPage - The popup handle id is CDwindow-C8C85BA139FC4E4F46F08BFD1A7A4062
+[INFO ] 2019-12-24 16:03:44.335 [pool-1-thread-5] LoginPage - The popup handle id is CDwindow-66016FA52C83572F96E9FD506E3E2162
+[INFO ] 2019-12-24 16:03:45.510 [pool-1-thread-1] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 16:03:45.697 [pool-1-thread-4] LoginPage - pay Button is enabled and disabled
+[INFO ] 2019-12-24 16:03:45.944 [pool-1-thread-2] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 16:03:46.032 [pool-1-thread-3] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 16:03:46.076 [pool-1-thread-4] LoginPage - completed
+[INFO ] 2019-12-24 16:03:46.126 [pool-1-thread-5] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 16:03:47.119 [pool-1-thread-1] LoginPage - pay Button is enabled and disabled
+[INFO ] 2019-12-24 16:03:47.251 [pool-1-thread-1] LoginPage - completed
+[INFO ] 2019-12-24 16:03:47.864 [pool-1-thread-2] LoginPage - pay Button is enabled and disabled
+[INFO ] 2019-12-24 16:03:47.942 [pool-1-thread-5] LoginPage - pay Button is enabled and disabled
+[INFO ] 2019-12-24 16:03:47.962 [pool-1-thread-3] LoginPage - pay Button is enabled and disabled
+[INFO ] 2019-12-24 16:03:48.099 [pool-1-thread-2] LoginPage - completed
+[INFO ] 2019-12-24 16:03:48.274 [pool-1-thread-5] LoginPage - completed
+[INFO ] 2019-12-24 16:03:48.343 [pool-1-thread-3] LoginPage - completed
+[INFO ] 2019-12-24 16:14:43.928 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 16:14:44.083 [main] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 16:14:54.456 [main] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 16:15:02.190 [main] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 16:15:07.274 [main] LoginPage - The popup handle id is CDwindow-BB11B09813AC10F77C92EC130828B081
+[INFO ] 2019-12-24 16:16:00.061 [pool-1-thread-1] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 16:16:00.237 [pool-1-thread-1] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 16:16:11.148 [pool-1-thread-1] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 16:16:19.093 [pool-1-thread-1] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 16:16:24.131 [pool-1-thread-1] LoginPage - The popup handle id is CDwindow-70822D0A865C33323F461813D5712E12
+[INFO ] 2019-12-24 16:16:25.351 [pool-1-thread-1] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 16:16:26.711 [pool-1-thread-1] LoginPage - pay Button is enabled and disabled
+[INFO ] 2019-12-24 16:16:26.834 [pool-1-thread-1] LoginPage - completed
+[INFO ] 2019-12-24 16:29:36.125 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 16:29:36.635 [main] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 16:29:50.172 [main] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 16:29:58.175 [main] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 16:30:03.214 [main] LoginPage - The popup handle id is CDwindow-C8A4BAC0DC8731200FD26EB39012513C
+[INFO ] 2019-12-24 16:30:04.484 [main] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 16:30:05.873 [main] LoginPage - pay Button is enabled and disabled
+[INFO ] 2019-12-24 16:30:06.043 [main] LoginPage - completed
+[INFO ] 2019-12-24 16:31:09.079 [pool-1-thread-1] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 16:31:09.244 [pool-1-thread-1] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 16:31:18.794 [pool-1-thread-1] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 16:31:27.255 [pool-1-thread-1] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 16:31:32.283 [pool-1-thread-1] LoginPage - The popup handle id is CDwindow-0A0EEF73C19E99BDC26A343EF0296221
+[INFO ] 2019-12-24 16:31:33.520 [pool-1-thread-1] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 16:31:34.881 [pool-1-thread-1] LoginPage - pay Button is enabled and disabled
+[INFO ] 2019-12-24 16:31:35.047 [pool-1-thread-1] LoginPage - completed
+[INFO ] 2019-12-24 16:32:52.771 [pool-1-thread-1] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 16:32:52.954 [pool-1-thread-1] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 16:33:02.867 [pool-1-thread-1] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 16:33:11.784 [pool-1-thread-1] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 16:33:16.845 [pool-1-thread-1] LoginPage - The popup handle id is CDwindow-871A0DA7D45734E9E387E081DB2B8A42
+[INFO ] 2019-12-24 16:33:18.083 [pool-1-thread-1] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 16:33:19.430 [pool-1-thread-1] LoginPage - pay Button is enabled and disabled
+[INFO ] 2019-12-24 16:33:19.609 [pool-1-thread-1] LoginPage - completed
+[INFO ] 2019-12-24 16:34:47.214 [pool-1-thread-1] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 16:34:47.363 [pool-1-thread-1] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 16:34:56.560 [pool-1-thread-1] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 16:35:04.853 [pool-1-thread-1] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 16:35:09.892 [pool-1-thread-1] LoginPage - The popup handle id is CDwindow-7F86F6B31EDD14DE8239D850AEBA6911
+[INFO ] 2019-12-24 16:35:11.116 [pool-1-thread-1] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 16:35:12.457 [pool-1-thread-1] LoginPage - pay Button is enabled and disabled
+[INFO ] 2019-12-24 16:35:12.584 [pool-1-thread-1] LoginPage - completed
+[INFO ] 2019-12-24 16:36:35.421 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 16:36:36.044 [main] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 16:36:45.530 [main] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 16:36:53.726 [main] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 16:36:58.875 [main] LoginPage - The popup handle id is CDwindow-7B5916BEEFEFFDDAA77390EB5B38F82B
+[INFO ] 2019-12-24 16:37:00.149 [main] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 16:37:01.531 [main] LoginPage - pay Button is enabled and disabled
+[INFO ] 2019-12-24 16:37:01.651 [main] LoginPage - completed
+[INFO ] 2019-12-24 16:37:45.938 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 16:37:46.474 [main] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 16:37:56.034 [main] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 16:38:04.099 [main] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 16:38:09.128 [main] LoginPage - The popup handle id is CDwindow-F5DEFFB168DE8221BF0E10CE0D3E91F4
+[INFO ] 2019-12-24 16:38:10.360 [main] LoginPage - having paytm optin to select.
+[INFO ] 2019-12-24 16:38:11.711 [main] LoginPage - pay Button is enabled and disabled
+[INFO ] 2019-12-24 16:38:11.833 [main] LoginPage - completed
+[INFO ] 2019-12-24 16:59:04.320 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 16:59:04.499 [main] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 16:59:13.816 [main] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 16:59:21.734 [main] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 16:59:26.779 [main] LoginPage - The popup handle id is CDwindow-14CD97EEB51CD2E990CC3452D6ACD46C
+[INFO ] 2019-12-24 16:59:52.225 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 16:59:52.318 [main] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 17:00:04.248 [main] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 17:00:12.554 [main] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 17:00:17.588 [main] LoginPage - The popup handle id is CDwindow-3F21B3550AA308FC1A67D2072773C876
+[INFO ] 2019-12-24 17:23:38.256 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 17:23:38.387 [main] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 17:23:48.366 [main] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 17:24:14.469 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 17:24:14.769 [main] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 17:24:26.169 [main] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 17:24:34.554 [main] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 17:24:39.585 [main] LoginPage - The popup handle id is CDwindow-0426AD4A9C5A8953840E45B07B6F58E7
+[INFO ] 2019-12-24 17:25:49.459 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 17:25:49.615 [main] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 17:25:58.962 [main] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 17:31:45.847 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 17:31:46.000 [main] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 17:31:55.434 [main] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 17:32:07.774 [main] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 17:32:12.804 [main] LoginPage - The popup handle id is CDwindow-68E644031F40ED4FA4376C4D5BE22A29
+[INFO ] 2019-12-24 17:36:03.818 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 17:36:03.946 [main] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 17:36:13.498 [main] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 17:36:20.989 [main] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 17:36:26.022 [main] LoginPage - The popup handle id is CDwindow-5B58EABE2CED68D330FF7E53D4375C43
+[INFO ] 2019-12-24 17:36:53.099 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 17:36:53.201 [main] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 17:37:02.480 [main] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 17:37:09.926 [main] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 17:37:14.944 [main] LoginPage - The popup handle id is CDwindow-61DA772C15E47815E3A292C65DCA4754
+[INFO ] 2019-12-24 17:48:01.746 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 17:48:01.970 [main] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 17:48:14.695 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 17:48:14.909 [main] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 17:48:17.372 [main] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 17:48:25.345 [main] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 17:48:25.424 [main] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 17:48:30.369 [main] LoginPage - The popup handle id is CDwindow-11B162B5F95441DA13B324D07BE65182
+[INFO ] 2019-12-24 17:48:57.037 [main] LoginPage - 
+Verify the presence of Event
+[INFO ] 2019-12-24 17:48:58.797 [main] LoginPage - Register button is displayed and enabled.
+[INFO ] 2019-12-24 17:49:08.909 [main] LoginPage - 
+ verify first name
+[INFO ] 2019-12-24 17:49:16.412 [main] LoginPage - This is showing the model popup
+[INFO ] 2019-12-24 17:49:21.444 [main] LoginPage - The popup handle id is CDwindow-A7AE7D68F3E1BB23FC76BDB0B1590E6D
