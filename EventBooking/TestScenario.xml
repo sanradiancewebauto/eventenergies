@@ -2,20 +2,14 @@
 <!--Test Scenario XML -->
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="EventEnergise Test suite" verbose="1" parallel="classes" thread-count="4">
+<suite name="EventEnergise Test suite" verbose="1" parallel="methods" thread-count="4">
+	<parameter name="username" value="storageblues@gmail.com" />
+	<parameter name="password" value="Kingstone@123" />
 	<test name="Page Tests" preserve-order="true">
 		<classes>
-			<class name="TestManager.MainpageTest">
+			<class name="TestManager.EventsPageTest">
 				<methods>
-
-					<exclude name="mainpage_menubar_element_display_test01"/>
-					<exclude name="mainpage_event_slider_display_test02"/>
-				</methods>
-			</class>
-			<class name="TestManager.LoginTest">
-				<methods>
-					<include name="verification_of_loginpage_element_view_test01"/>
-
+					<include name="verification_of_events_creation_test01" />
 				</methods>
 			</class>
 		</classes>

@@ -14,6 +14,8 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+
 import ElementRepository.MainPageElements;
 
 import TestDataProvider.*;
@@ -22,6 +24,7 @@ import TestDataProvider.*;
 
 public class LoginTest {
 	public static String browserName = "firefox";
+	public static String logoutValue="yes";
 	public static WebDriver driver = null ;
 	static Logger log = LogManager.getLogger(LoginTest.class.getName());
 			
@@ -46,17 +49,37 @@ public class LoginTest {
 		Thread.sleep(1000);
 		
 	}
+	//@Test(threadPoolSize=2, invocationCount=2, timeOut=1000, dataProvider = "SearchProvider", dataProviderClass=LoginDataProvider.class)
 	@Test(dataProvider = "SearchProvider", dataProviderClass=LoginDataProvider.class)
-	public static void verification_of_loginpage_element_view_test01(String username, String password) throws Exception {
+	public static void verification_of_valid_login_credentials_test01(String username, String password) throws Exception {
+		
 		log.info("Verification of user [{}] login window",username);
 		@SuppressWarnings("unchecked")
 		final Map<String, String> checkValues = (Map<String, String>) PageFactory.LoginPage
-				.userLoginElementDisplay(browserName, driver, username, password);
-		log.info("the map object is {}", checkValues);
+				.userLoginElementDisplay(browserName, driver, username, password, logoutValue);
+		//log.info("The map object is {}", checkValues);
 		Assert.assertEquals(checkValues.get("Title"), "Login to get going.", "No match for title found.");
-		log.info("Title match found.");
-		Assert.assertEquals(checkValues.get("status"), "true", "User login test successful");
+		log.info("Login page elements are visible.");
+		Assert.assertEquals(checkValues.get("status"), "true", "Valid user login credentails test failed.");
+		log.error("Valid user login credentails test passed.");
 	}
+	
+//	@Test(dataProvider = "SearchProvider", dataProviderClass=LoginDataProvider.class)
+//	public static void verification_of_invalid_login_credentials_test02(String username, String password) throws Exception {
+//		log.info("Verification of user [{}] login window",username);
+//		@SuppressWarnings("unchecked")
+//		final Map<String, String> checkValues = (Map<String, String>) PageFactory.LoginPage
+//				.userLoginElementDisplay(browserName, driver, username, password, logoutValue);
+//		//log.info("The map object is {}", checkValues);
+//		Assert.assertEquals(checkValues.get("Title"), "Login to get going.", "No match for title loginpage title found.");
+//		log.info("Login page elements are visible.");
+//		Assert.assertEquals(checkValues.get("verify_status"), "true", "No match for title invalid message error popup found.");
+//		log.info("Wrong credential popup visible on wrong user input.");
+//		Assert.assertEquals(checkValues.get("status"), "invalid", "Invalid user login credentails test failed.");
+//		log.error("Invalid user login credentails test passed.");
+//		
+//	}
+//	
 
 	@AfterTest
 	public void tearDown() throws Exception {

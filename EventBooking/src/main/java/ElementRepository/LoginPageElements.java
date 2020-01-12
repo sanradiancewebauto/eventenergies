@@ -12,8 +12,8 @@ public class LoginPageElements {
 	//Login page title
 	public static String LoginIconText ="a > div";
 
-	public static String LoginTitle ="/html/body/app-root/app-login-page/div[1]/div[1]/div/div/h3"; //xpath
-
+	public static String LoginTitle ="/html/body/app-root/app-login-page/div[1]/div[1]/div/div/div"; //xpath
+	
 	//Email Address
 	public static String LoginUserName = "email"; //id
 
@@ -36,6 +36,11 @@ public class LoginPageElements {
 	public static String loginButton = "/html/body/app-root/app-login-page/div[1]/form/div/div[3]/div/input";//xpath
 	public static String userSetting = "/html/body/app-root/app-main-activity/app-main-navbar/div[1]/ul[2]/li[5]/a/i";//xpath
 	public static String userLogoutButton = "/html/body/app-root/app-main-activity/app-main-navbar/div[2]/ul/li[7]";//xpath
+	
+	
+	//Incorrect login credentails error popup
+	public static String loginErrorPopup = "/html/body/app-root/app-alert"; //xpath
+	
 	//Login with mobile number page
 	public static String  LoginWithMobile ="Or Sign in with mobile number";
 

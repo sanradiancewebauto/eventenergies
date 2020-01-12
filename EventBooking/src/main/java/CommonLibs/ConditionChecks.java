@@ -2,13 +2,18 @@ package CommonLibs;
 
 import java.util.NoSuchElementException;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 public class ConditionChecks {
 	public static WebDriver driver = null; 
+	static Logger log = LogManager.getLogger(ConditionChecks.class.getName());
 	
 	public boolean isElementPresent(By by) 
 	{
@@ -18,7 +23,7 @@ public class ConditionChecks {
 			return true;
 		} catch (NoSuchElementException e) 
 		{
-			System.out.println("Element not found.");
+			log.info("Element not found.");
 			return false;
 		}
 	}
@@ -57,5 +62,25 @@ public class ConditionChecks {
 		{
 			acceptNextAlert = true;
 		}
+	}
+	public static boolean mouseHover(String webElement) throws InterruptedException
+	{
+		boolean status = true;
+		try {
+			log.info("what is my class name {}",webElement);
+			Thread.sleep(1000);
+	        Actions action = new Actions(driver);
+	        WebElement mouseOver = driver.findElement(By.xpath(webElement));
+			action.moveToElement(mouseOver).perform();
+			Thread.sleep(1000);
+			log.info("Done Mouse hover on 'Event' details.");
+			status = true;
+		}finally {
+			log.info("Failed Mouse hover on 'Event' details.");
+			status = false;
+		}
+		return status;
+		
+		
 	}
 }
