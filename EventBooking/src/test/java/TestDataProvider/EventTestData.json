@@ -12,15 +12,12 @@
       "TimeZone": "EST",
       "Venue": "J. P. Nagar",
       "AddressLine": "This is address line 1",
-      "AddressLine2": "This is address line 1",
+      "AddressLine2": "This is address line 2",
       "City": "Bangalore",
       "State": "Karnataka",
       "Country": "India",
-      "Pincode": "560032",
-      "Tags": "1",
-      "Tickets": "1",
-      "TagName": "Test1",
-      "Description": "EventTesting1",
+      "PinCode": "560032",
+      "TicketsCount": "1",
       "TicketType": "Donation",
       "TicketName": "TestTicket1",
       "PaymentGateway": "Organizer Pay Both the Fees (3.99%+GST)",
@@ -28,7 +25,10 @@
       "MinQty": "1",
       "MaxQty": "5",
       "Price": "10",
-      "Currency": "INR"
+      "Currency": "INR",
+      "TagsCount": "1",
+      "TagName": "Test100",
+      "Description": "EventTesting100"
     }
   ]
 }

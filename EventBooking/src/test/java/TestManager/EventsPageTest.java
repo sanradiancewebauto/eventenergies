@@ -52,7 +52,6 @@ public class EventsPageTest {
 			@SuppressWarnings("unchecked")
 			final Map<String, String> returnValues = (Map<String, String>) PageFactory.LoginPage.userLoginElementDisplay(browserName, 
 					driver, username, password, logoutValue);		
-			log.info("return val in test  inside test {}", returnValues);
 			Assert.assertEquals(returnValues.get("status"), "true", "Login failed.");
 			log.info("Login successful.");
 		}
@@ -76,9 +75,6 @@ public class EventsPageTest {
 				String state,
 				String country,
 				String pincode,
-				String tags,
-				String tagname,
-				String description,
 				String tickets,
 				String tickettype,
 				String ticketname,
@@ -87,7 +83,10 @@ public class EventsPageTest {
 				String minqty,
 				String maxqty,
 				String price,
-				String currency) throws Exception {
+				String currency,
+				String tagscount,
+				String tagname,
+				String description) throws Exception {
 			
 			log.info("Building a dataset map from the dataprovider extracted from json testdata file.");
 			final HashMap<String, String> testdata =  new HashMap<String, String>();
@@ -104,29 +103,36 @@ public class EventsPageTest {
 			testdata.put("AddressLine", addressline);
 			testdata.put("AddressLine2",addressline2);
 			testdata.put("City",city);
-			testdata.put("Ctate", state);
+			testdata.put("State", state);
 			testdata.put("Country", country);
 			testdata.put("PinCode", pincode);
-			testdata.put("Tags", tags);
-			testdata.put("Tagname", tagname);
-			testdata.put("Description", description);
-			testdata.put("Tickets", tickets);
+			testdata.put("TicketsCount", tickets);
 			testdata.put("TicketType", tickettype);
 			testdata.put("TicketName", ticketname);
 			testdata.put("PaymentGateway", paymentgateway);
 			testdata.put("Quantity", quantity);
-			testdata.put("Minqty", minqty);
-			testdata.put("Maxqty", maxqty);
+			testdata.put("MinQty", minqty);
+			testdata.put("MaxQty", maxqty);
 			testdata.put("Price", String.valueOf(price));
 			testdata.put("Currency", currency);
+			testdata.put("TagsCount", tagscount);
+			testdata.put("TagName", tagname);
+			testdata.put("Description", description);
 	
 			@SuppressWarnings("unchecked")
 			final Map<String, String> checkEventValues = (Map<String, String>) EventsPage.CreateEvents(browserName, driver, testdata);
-			log.info("Test Status :{}",checkEventValues.get("EventStatus"));
+			log.info("Test Status :{}",checkEventValues);
 			//Assert.assertEquals(checkEventValues.get("hoverStatus"), "false", "Event detail element mouse hover check failed.");
+			Assert.assertEquals(checkEventValues.get("DateStatus"), "true", "Event Date setup failed.");
+			Assert.assertEquals(checkEventValues.get("VenueStatus"), "true", "Event Venue setup failed.");
+			Assert.assertEquals(checkEventValues.get("TicketStatus"), "true", "Event Ticket setup failed.");
+			Assert.assertEquals(checkEventValues.get("TagStatus"), "true", "Event Tag setup failed.");
+		
+			log.error(checkEventValues.get("EventErrorMsg"));
+			Assert.assertEquals(checkEventValues.get("EventStatus"), "true", "Event creation failed.");
 			
-			Assert.assertEquals(checkEventValues.get("EventStatus"), "true", "Navigation to the Event Details failed.");
-			log.info("Navigation to the Event Details successful.");
+			log.info(checkEventValues.get("EventSuccessMsg"));
+			log.info("Event creation successful.");
 			
 			
 			

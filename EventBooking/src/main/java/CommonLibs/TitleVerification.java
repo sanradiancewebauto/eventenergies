@@ -12,6 +12,7 @@ public class TitleVerification {
 	public static final String  invalid_user_popup_text = "Username or password wrong" ;
 	public static final String  event_title = "Add Event Details";
 	public static final String  event_lable = "Design your event";
+	public static final String  add_tag = "Add new key tag";
 	
 	public static boolean verify_title(String verify_title) throws Exception {
 		log.info("Verifying of title string [{}]",verify_title);
@@ -22,6 +23,8 @@ public class TitleVerification {
 		}else if (event_title.equals(verify_title)) {
 			return true;
 		}else if (event_lable.equals(verify_title)) {
+			return true;
+		}else if (add_tag.equals(verify_title)) {
 			return true;
 		}else {
 			return false;
