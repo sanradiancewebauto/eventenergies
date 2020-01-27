@@ -1,8 +1,11 @@
 package PageFactory;
 
 import java.io.FileInputStream;
-import java.io.IOException;
+import java.util.HashMap;
 
+import org.apache.commons.lang.math.RandomUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -11,58 +14,71 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class RegistrationPage {
+import CommonLibs.Utils;
 
+public class RegistrationPage {
+	static Logger log = LogManager.getLogger(LoginPage.class.getName());
 	public static boolean status = true;
-	public static boolean navigateToRegisterPage(String browserName, WebDriver driver) 
+	public static String pwd = System.getProperty("user.dir");
+	
+	public static boolean navigateToRegisterPage(String browserName, WebDriver driver, String autoRegisterUserFlag, HashMap<String, String> autoRegisterUserData) 
 	{
 		try
 		{
 			// verify the register button
-			System.out.println("\nVerify the presence of Register Button");
+			log.info("Verify the presence of Register Button");
 			//WebDriver driver = DriverManager.BaseDriver.getDriverConn(browserName);
 			WebElement registerNow = driver.findElement(By.cssSelector(ElementRepository.MainPageElements.registrationButton));
 			System.out.printf("browser=",browserName,"driver=",driver);
 			if (registerNow.isDisplayed() && registerNow.isEnabled())
 			{
-				System.out.println("Register button is displayed and enabled.");
+				log.info("Register button is displayed and enabled.");
 			}else {
-				System.out.println("Register button is not displayed nor enabled.");
+				log.info("Register button is not displayed nor enabled.");
 				status = false;
 			}
 			registerNow.click();
 			Thread.sleep(1000);
-			System.out.println("\nVerify the presence of EventAttendee registration");
+			log.info("Verify the presence of EventAttendee registration");
 			WebElement attendee = driver.findElement(By.xpath(ElementRepository.RegistrationPageElements.EventAttendee));
 			if(attendee.isEnabled())
 			{
-				System.out.println("Event Attendee is Displayed");
+				log.info("Event Attendee is Displayed");
 			}else {
-				System.out.println("Event Attendee is not Displayed");
+				log.info("Event Attendee is not Displayed");
+				status = false;
 			}
 			attendee.click();
 			Thread.sleep(1000);
-			System.out.println("\nVerify the presence of EventEnergies Title");
+			log.info("Verify the presence of EventEnergies Title");
 			WebElement title = driver.findElement(By.linkText(ElementRepository.RegistrationPageElements.RegisterTitle));
 			if(title.isDisplayed())
 			{
-				System.out.println("EventEnergies title is Displayed");
+				log.info("EventEnergies title is Displayed");
 			}else {
-				System.out.println("EventEnergies title not Displayed");
+				log.info("EventEnergies title not Displayed");
+				status = false;
 			}
 			Thread.sleep(1000);
-			System.out.println("verify the pressence of EventEnergies Subtitle");
+			log.info("verify the pressence of EventEnergies Subtitle");
 			WebElement subTitle = driver.findElement(By.cssSelector(ElementRepository.RegistrationPageElements.RegisterSubTitle));
 			if(subTitle.isDisplayed())
 			{
-				System.out.println("EventEnergies subtitle is Displayed");
+				log.info("EventEnergies subtitle is Displayed");
 			}else {
-				System.out.println("EventEnergies subtitle is not Displayed");
+				log.info("EventEnergies subtitle is not Displayed");
+				status = false;
 			}
 
 			Thread.sleep(1000);
 			//verify registration for attendee
-			ReadExcel(browserName, driver);
+			if (autoRegisterUserFlag=="yes") {
+				status = autoRegisterUserData(driver, autoRegisterUserData);
+				
+			}else {
+				ReadExcel(browserName, driver);
+			}
+			log.info("Verify new user registration.");
 
 		}catch (Exception E) 
 		{
@@ -71,9 +87,49 @@ public class RegistrationPage {
 		return status;
 	}
 
-	private static void ReadExcel(String browserName, WebDriver driver) throws IOException, InterruptedException {
+	private static boolean autoRegisterUserData(WebDriver driver, HashMap<String, String> autoRegisterUserData) throws InterruptedException {
+		// TODO Auto-generated method stub
+		log.info("First user = {}", autoRegisterUserData.get("EMAILID"));
+		log.info("First password = {}", autoRegisterUserData.get("PASSWORD"));
+		log.info("Implementation of auto generated Email ID registration.");
+		WebElement firstname = driver.findElement(By.name(ElementRepository.RegistrationPageElements.RegisterFirstNamefield));
+		firstname.sendKeys("FirstName1");
+		Thread.sleep(2000);
+		WebElement lastname = driver.findElement(By.name(ElementRepository.RegistrationPageElements.RegisterLastNamefield));
+		lastname.sendKeys("LastName1");
+		Thread.sleep(1000);
+		WebElement contactNumber = driver.findElement(By.id(ElementRepository.RegistrationPageElements.RegisterPhonefield));
+		final int phoneNumber = RandomUtils.nextInt(900) + 100;
+		
+		contactNumber.sendKeys("+17733404" + phoneNumber);
+		Thread.sleep(1000);
+		WebElement emailID = driver.findElement(By.name(ElementRepository.RegistrationPageElements.EmailField));
+		emailID.sendKeys(autoRegisterUserData.get("EMAILID"));
+		Thread.sleep(1000);
+		WebElement password = driver.findElement(By.name(ElementRepository.RegistrationPageElements.PasswordField));
+		password.sendKeys(autoRegisterUserData.get("PASSWORD"));
+		Thread.sleep(1000);
+		WebElement checkbox = driver.findElement(By.cssSelector(ElementRepository.RegistrationPageElements.CheckboxLabel));
+		checkbox.click();
+		Thread.sleep(1000);
+		WebElement submitBtn = driver.findElement(By.cssSelector(ElementRepository.RegistrationPageElements.SubmitButton));
+		if (submitBtn.isEnabled()){
+			submitBtn.click();
+			Thread.sleep(1000);
+			status = true;
+		}else {
+			log.info("Submit button is not enabled. Please check the form input.");
+			status = false;
+		}
+		
+		return status;
+	}
 
-		FileInputStream fis = new FileInputStream("D:\\eventenergies\\EventBooking\\src\\test\\java\\TestManager\\Login .xlsx");
+	private static void ReadExcel(String browserName, WebDriver driver) throws Exception {
+		
+		String userExcelLocation = pwd + "\\src\\test\\java\\TestManager\\" + "Login.xlsx"; 
+		String dynamicPath = Utils.separatorsToSystem(userExcelLocation);
+		FileInputStream fis = new FileInputStream(dynamicPath);
 		XSSFWorkbook workbook = new XSSFWorkbook(fis);
 		XSSFSheet sheet = workbook.getSheetAt(0);
 		Row row = sheet.getRow(0);
@@ -85,15 +141,15 @@ public class RegistrationPage {
 			WebElement firstname = driver.findElement(By.name(ElementRepository.RegistrationPageElements.RegisterFirstNamefield));
 			firstname.sendKeys(cell.getStringCellValue());
 			Thread.sleep(2000);
-			System.out.println(sheet.getRow(i).getCell(0));
+			log.info(sheet.getRow(i).getCell(0));
 
 			//import data for last name
-			System.out.print("lastname:");
+			log.info("lastname:");
 			cell = sheet.getRow(i).getCell(1); 
 			WebElement lastname = driver.findElement(By.name(ElementRepository.RegistrationPageElements.RegisterLastNamefield));
 			lastname.sendKeys(cell.getStringCellValue());
 			Thread.sleep(1000);
-			System.out.println(sheet.getRow(i).getCell(1));
+			log.info(sheet.getRow(i).getCell(1));
 			
 			//import data for mobile number
 			System.out.print("contact number:");
@@ -101,7 +157,7 @@ public class RegistrationPage {
 			WebElement contactNumber = driver.findElement(By.id(ElementRepository.RegistrationPageElements.RegisterPhonefield));
 			contactNumber.sendKeys(cell.getStringCellValue());
 			Thread.sleep(1000);
-			System.out.println(sheet.getRow(i).getCell(1));
+			log.info(sheet.getRow(i).getCell(1));
 			
 			firstname.clear(); lastname.clear();contactNumber.clear();
 

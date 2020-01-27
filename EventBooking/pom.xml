@@ -123,6 +123,44 @@
 		    <artifactId>log4j-core</artifactId>
 		    <version>2.12.1</version>
 		</dependency>
+		
+		<!-- These dependencies are for mail configuration -->
+		<dependency>
+		    <groupId>com.mashape.unirest</groupId>
+		    <artifactId>unirest-java</artifactId>
+		    <version>1.4.9</version>
+		</dependency>
+		<dependency>
+		    <groupId>com.fasterxml.jackson.core</groupId>
+		    <artifactId>jackson-databind</artifactId>
+		    <version>2.9.3</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>commons-lang</groupId>
+		    <artifactId>commons-lang</artifactId>
+		    <version>2.6</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+		<dependency>
+		    <groupId>commons-io</groupId>
+		    <artifactId>commons-io</artifactId>
+		    <version>2.4</version>
+		</dependency>
+		<!-- End dependencies are for mail configuration -->
+		
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.5.10</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.jsoup/jsoup -->
+		<dependency>
+		    <groupId>org.jsoup</groupId>
+		    <artifactId>jsoup</artifactId>
+		    <version>1.11.3</version>
+		</dependency>
+		
 	</dependencies>
 	
 
