@@ -63,6 +63,19 @@ public class LoginTest {
 		Assert.assertEquals(checkValues.get("status"), "true", "Valid user login credentails test failed.");
 		log.error("Valid user login credentails test passed.");
 	}
+	@Test(dataProvider = "SearchProvider", dataProviderClass=LoginDataProvider.class)
+	public static void verification_of_Invalid_login_credentials_test01(String username, String password) throws Exception {
+		
+		log.info("Verification of user [{}] login window",username);
+		@SuppressWarnings("unchecked")
+		final Map<String, String> checkValues = (Map<String, String>) PageFactory.LoginPage
+				.userLoginElementDisplay(browserName, driver, username, password, logoutValue);
+		//log.info("The map object is {}", checkValues);
+		Assert.assertEquals(checkValues.get("Title"), "Login to get going.", "No match for title found.");
+		log.info("Login page elements are visible.");
+		Assert.assertEquals(checkValues.get("status"), "true", "Valid user login credentails test failed.");
+		log.error("Valid user login credentails test passed.");
+	}
 	
 //	@Test(dataProvider = "SearchProvider", dataProviderClass=LoginDataProvider.class)
 //	public static void verification_of_invalid_login_credentials_test02(String username, String password) throws Exception {

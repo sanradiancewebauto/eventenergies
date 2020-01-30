@@ -41,7 +41,8 @@ public class RegistrationTest {
     	autoRegisterUserData.put("PASSWORD",nada.getPassword());
     	String registeredMailId = nada.getInbox(nada.getEmailId());
     	log.info("Register a new user with generated email.");
-		boolean status = PageFactory.RegistrationPage.navigateToRegisterPage(browserName, driver, autoRegisterUserFlag, autoRegisterUserData);
+		boolean status = PageFactory.RegistrationPage.navigateToRegisterPage(browserName, driver, 
+				autoRegisterUserFlag, autoRegisterUserData);
 
     	Thread.sleep(5000);
     	int count = 0;
@@ -55,7 +56,8 @@ public class RegistrationTest {
     	}
 		Assert.assertTrue(status, "User registration failed");
 		log.info("User registration successful.");
-		LoginPage.userLoginElementDisplay(browserName, driver, autoRegisterUserData.get("EMAILID"), autoRegisterUserData.get("PASSWORD"), "yes");
+		LoginPage.userLoginElementDisplay(browserName, driver, autoRegisterUserData.get("EMAILID"), 
+				autoRegisterUserData.get("PASSWORD"), "yes");
 
 	}
 
