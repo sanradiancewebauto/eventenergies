@@ -2,14 +2,16 @@
 <!--Test Scenario XML -->
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="EventEnergise Test suite" verbose="1" parallel="methods" thread-count="4">
+<!-- <suite name="EventEnergise Test suite" verbose="1" parallel="methods" thread-count="4" data-provider-thread-count="3" > -->
+<suite name="EventEnergise Test suite" verbose="1" parallel="methods" thread-count="1" data-provider-thread-count="1" >
 	<parameter name="username" value="storageblues@gmail.com" />
 	<parameter name="password" value="Kingstone@123" />
 	<test name="Page Tests" preserve-order="true">
 		<classes>
-			<class name="TestManager.EventsPageTest">
+			<class name="TestManager.LoginTest">
 				<methods>
-					<include name="verification_of_events_creation_test01" />
+					<include name="verification_of_valid_login_credentials_test01" />
+					<include name="verification_of_Invalid_login_credentials_test02" />
 				</methods>
 			</class>
 		</classes>

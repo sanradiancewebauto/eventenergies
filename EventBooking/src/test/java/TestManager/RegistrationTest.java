@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 
 import CommonLibs.NadaEMailService;
 import PageFactory.LoginPage;
+import TestDataProvider.RegistrationDataProvider;
 
 public class RegistrationTest {
 
@@ -31,33 +32,43 @@ public class RegistrationTest {
 		nada = new NadaEMailService();
 
 	}
-
-	@Test
-	public void mainpage_menubar_element_display_test02() throws Exception{
-
+	
+	@Test(dataProvider="GET_JSON_DATA", dataProviderClass=RegistrationDataProvider.class)
+	public void resgister_new_user_verify_email_01(String usertype,
+			String firstname,
+			String lastname,
+			String phonecountry) throws Exception{
+		log.info("Building a dataset map from the dataprovider extracted from json testdata file.");
+		final HashMap<String, String> testdata =  new HashMap<String, String>();
+		testdata.put("USERTYPE", usertype);
+		testdata.put("FIRSTNAME", firstname);
+		testdata.put("LASTNAME", lastname);
+		testdata.put("PHONECOUNTRY", phonecountry);
+		testdata.put("EMAILID",nada.getEmailId());
+		testdata.put("PASSWORD",nada.getPassword());
+		
 		log.info("Test to verify the Registration page.");
-		log.info("Validate the auto generated Email ID [{}] via [getnada.com] api's mail service.",nada.getEmailId());
-    	autoRegisterUserData.put("EMAILID",nada.getEmailId());
-    	autoRegisterUserData.put("PASSWORD",nada.getPassword());
-    	String registeredMailId = nada.getInbox(nada.getEmailId());
+		log.info("Validate the auto generated Email ID [{}] via [getnada.com] api's mail "
+				+ "service.",testdata.get("EMAILID"));
+    	String registeredMailId = nada.getInbox(testdata.get("EMAILID"));
+       	Thread.sleep(5000);
+//    	int count = 0;
+//    	while (count < 2) {
+//    		Boolean msgStatus = nada.readMessages(registeredMailId);
+//    		if (msgStatus.equals(true)) {
+//    			break;
+//    		}
+//    		Thread.sleep(5000);
+//    		count = count + 1;
+//    	}
     	log.info("Register a new user with generated email.");
 		boolean status = PageFactory.RegistrationPage.navigateToRegisterPage(browserName, driver, 
-				autoRegisterUserFlag, autoRegisterUserData);
+				autoRegisterUserFlag, testdata);
 
-    	Thread.sleep(5000);
-    	int count = 0;
-    	while (count < 2) {
-    		Boolean msgStatus = nada.readMessages(registeredMailId);
-    		if (msgStatus.equals(true)) {
-    			break;
-    		}
-    		Thread.sleep(5000);
-    		count = count + 1;
-    	}
+ 
 		Assert.assertTrue(status, "User registration failed");
 		log.info("User registration successful.");
-		LoginPage.userLoginElementDisplay(browserName, driver, autoRegisterUserData.get("EMAILID"), 
-				autoRegisterUserData.get("PASSWORD"), "yes");
+		LoginPage.userLoginElementDisplay(browserName, driver, testdata.get("EMAILID"), testdata.get("PASSWORD"), autoRegisterUserFlag);
 
 	}
 

@@ -92,16 +92,21 @@ public class RegistrationPage {
 		log.info("First user = {}", autoRegisterUserData.get("EMAILID"));
 		log.info("First password = {}", autoRegisterUserData.get("PASSWORD"));
 		log.info("Implementation of auto generated Email ID registration.");
+		String countryCode = "+91";
 		WebElement firstname = driver.findElement(By.name(ElementRepository.RegistrationPageElements.RegisterFirstNamefield));
-		firstname.sendKeys("FirstName1");
+		firstname.sendKeys(autoRegisterUserData.get("FIRSTNAME"));
 		Thread.sleep(2000);
 		WebElement lastname = driver.findElement(By.name(ElementRepository.RegistrationPageElements.RegisterLastNamefield));
-		lastname.sendKeys("LastName1");
+		lastname.sendKeys(autoRegisterUserData.get("LASTNAME"));
 		Thread.sleep(1000);
 		WebElement contactNumber = driver.findElement(By.id(ElementRepository.RegistrationPageElements.RegisterPhonefield));
 		final int phoneNumber = RandomUtils.nextInt(900) + 100;
-		
-		contactNumber.sendKeys("+17733404" + phoneNumber);
+		if (autoRegisterUserData.get("LASTNAME").equals("US")) {
+			countryCode = "+1";
+		}else if (autoRegisterUserData.get("LASTNAME").equals("AU")) {
+			countryCode = "+16";
+		}
+		contactNumber.sendKeys(countryCode + "7733404" + phoneNumber);
 		Thread.sleep(1000);
 		WebElement emailID = driver.findElement(By.name(ElementRepository.RegistrationPageElements.EmailField));
 		emailID.sendKeys(autoRegisterUserData.get("EMAILID"));
