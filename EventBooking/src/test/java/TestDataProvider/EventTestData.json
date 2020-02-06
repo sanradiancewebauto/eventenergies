@@ -1,0 +1,34 @@
+{
+  "dataSet": [
+    {
+      "EventTitle": "Test Event-1",
+      "EventDescription": "Test Event-1 - Section Description",
+      "EventDescriptionDetails": "Test Event-1 Section Description Details",
+      "EventType": "Public",
+      "SelectCategory": "Professional",
+      "SubCategory": "Seminar/Conference",
+      "StartDate": "25 March 2020 T2:30PM",
+      "EndDate": "26 April 2020 T9:30AM",
+      "TimeZone": "EST",
+      "Venue": "J. P. Nagar",
+      "AddressLine": "This is address line 1",
+      "AddressLine2": "This is address line 2",
+      "City": "Bangalore",
+      "State": "Karnataka",
+      "Country": "India",
+      "PinCode": "560032",
+      "TicketsCount": "1",
+      "TicketType": "Donation",
+      "TicketName": "TestTicket1",
+      "PaymentGateway": "Organizer Pay Both the Fees (3.99%+GST)",
+      "Quantity": "100",
+      "MinQty": "1",
+      "MaxQty": "5",
+      "Price": "10",
+      "Currency": "INR",
+      "TagsCount": "1",
+      "TagName": "Test100",
+      "Description": "EventTesting100"
+    }
+  ]
+}
