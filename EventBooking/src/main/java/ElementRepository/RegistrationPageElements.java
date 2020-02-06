@@ -13,6 +13,7 @@ public class RegistrationPageElements {
 	public static String RegisterFirstNameLabel=".row:nth-child(1) > .col-sm-12 > .heading";
 
 	public static String RegisterFirstNamefield="first_name";
+	
 
 	public static  String RegisterFirstNameError="//p[contains(.,'First Name is required')]";
 
@@ -52,6 +53,7 @@ public class RegistrationPageElements {
 	public static String CheckboxLabel =".checkbox > label";
 
 	public static String CheckboxError=".error-mez";
+	public static String checkboxField="agree";
 
 	//Navigate To Login page
 	public static String SignInLabel="Already have an Account? Sign in here";

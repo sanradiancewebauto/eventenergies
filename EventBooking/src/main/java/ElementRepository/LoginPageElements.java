@@ -34,11 +34,8 @@ public class LoginPageElements {
 
 	//Submit button
 	public static String loginButton = "/html/body/app-root/app-login-page/div[1]/form/div/div[3]/div/input";//xpath
-	public static String userSetting = "/html/body/app-root/app-main-activity/app-main-navbar/div[1]/ul[2]/li[5]/a/i";//xpath
-	public static String userLogoutButton = "/html/body/app-root/app-main-activity/app-main-navbar/div[2]/ul/li[7]";//xpath
-	
-	
-	//Incorrect login credentails error popup
+	public static String userSetting = "#navbar_drop_down_button";//CSS
+	public static String userSettingMenu = "#navbar_drop_down";//CSS
 	public static String loginErrorPopup = "/html/body/app-root/app-alert"; //xpath
 	
 	//Login with mobile number page

@@ -8,7 +8,10 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import CommonLibs.TitleVerification;
+import ElementRepository.LoginPageElements;
+
 import java.util.HashMap;
+import java.util.List;
 
 
 
@@ -47,7 +50,7 @@ public class LoginPage {
 			if (loginUserEmail.isEnabled() && loginPassword.isEnabled()) {
 				log.info("Step4: Verify the user login and logout feature.");
 				log.info("Email and Password text field are enabled.");
-				log.info("Enter the user name=[{}] and password=[{}] ]", username, password);
+				log.info("Enter the user name=[{}] and password=[{}] ", username, password);
 				loginUserEmail.clear();
 				loginPassword.clear();
 				loginUserEmail.sendKeys(username);
@@ -60,17 +63,26 @@ public class LoginPage {
 				if (driver.findElement(By.xpath(ElementRepository.LoginPageElements.loginErrorPopup)).isDisplayed()) {
 					WebElement errorPopup = driver.findElement(By.xpath(ElementRepository.LoginPageElements.loginErrorPopup));
 					boolean verify_status = TitleVerification.verify_title(errorPopup.getText());
-					
+					log.error("Login credentials are invalid, failed with error [{}]", errorPopup.getText());
 					returnValues.put("verify_status", Boolean.toString(verify_status));
 					returnValues.put("status", "invalid");
 				}else if (logoutValue.equals("yes")) {
-					WebElement userSetting = driver.findElement(By.xpath(ElementRepository.LoginPageElements.userSetting));
+					WebElement userSetting = driver.findElement(By.cssSelector(LoginPageElements.userSetting));
 					if (userSetting.isDisplayed()) {
 						userSetting.click();
-						Thread.sleep(1000);
+						Thread.sleep(2000);
 						log.info("Login credentials are valid, user login successful.");
-						WebElement logoutBtn = driver.findElement(By.xpath(ElementRepository.LoginPageElements.userLogoutButton));
-						logoutBtn.click();
+						WebElement settingMenu = driver.findElement(By.cssSelector(LoginPageElements.userSettingMenu));
+						List<WebElement> userSettingMenu = settingMenu.findElements(By.tagName("li"));
+						for (int i=0; i<userSettingMenu.size();i++){	 
+							log.info("Traversal to search [Logout] button.");
+							log.debug("Get all the menu list text :{}: ", userSettingMenu.get(i).getText());
+							if ((userSettingMenu.get(i).getText()).equals("Logout")) {
+								log.info("Found logout button.");
+								Thread.sleep(2000);
+								userSettingMenu.get(i).click();
+							}
+						}
 						Thread.sleep(1000);	
 						returnValues.put("status", "true");
 					}
