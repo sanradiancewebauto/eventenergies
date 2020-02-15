@@ -17,17 +17,17 @@ import com.google.gson.JsonParser;
 import com.google.gson.JsonArray;
 
 
-public class EventsDataProvider {
+public class RegistrationDataProvider {
 	static Logger log = LogManager.getLogger(EventsDataProvider.class.getName());
 	public static String pwd = System.getProperty("user.dir");
-	public static String JSON_Path = pwd + "\\src\\test\\java\\TestDataProvider\\EventTestData.json";
+	public static String JSON_Path = pwd + "\\src\\test\\java\\TestDataProvider\\RegistrationTestData.json";
 
-	@DataProvider(name = "fetchData_JSON")
+	@DataProvider(name = "GET_JSON_DATA")
 	public static Object[][] getDataFromDataprovider(Method m) throws FileNotFoundException {
-		if (m.getName().equalsIgnoreCase("verification_of_events_creation_test01")) {
+		if (m.getName().equalsIgnoreCase("resgister_new_user_verify_email_01")) {
 
 			String JSON_dynamicPath = Utils.separatorsToSystem(JSON_Path);
-			Object[][] testdata =  EventsDataProvider.getdata(JSON_dynamicPath, "dataSet", 1, 28);
+			Object[][] testdata =  EventsDataProvider.getdata(JSON_dynamicPath, "dataSet", 1, 4);
 			return testdata;
 	      }
 		return null;

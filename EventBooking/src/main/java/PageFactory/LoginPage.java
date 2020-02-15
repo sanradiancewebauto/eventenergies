@@ -75,8 +75,6 @@ public class LoginPage {
 						WebElement settingMenu = driver.findElement(By.cssSelector(LoginPageElements.userSettingMenu));
 						List<WebElement> userSettingMenu = settingMenu.findElements(By.tagName("li"));
 						for (int i=0; i<userSettingMenu.size();i++){	 
-							log.info("Traversal to search [Logout] button.");
-							log.debug("Get all the menu list text :{}: ", userSettingMenu.get(i).getText());
 							if ((userSettingMenu.get(i).getText()).equals("Logout")) {
 								log.info("Found logout button.");
 								Thread.sleep(2000);

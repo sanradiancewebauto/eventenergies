@@ -4,7 +4,6 @@ import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.InputEvent;
-import java.awt.event.KeyEvent;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -24,13 +23,14 @@ public class UploadDownloadFiles {
 		   Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
 	}
 	public static void uploadDownloadFiles(WebDriver driver, String fileType, String fileSize) throws Exception {
+		String base = driver.getWindowHandle();
 		try {
 			WebElement file_input = driver.findElement(By.id("main_file"));
 	    	if (fileType.equals("image")) {
 	    		String absolute_file_path = absolute_file_dir + "/" + "crowd.jpeg";
 	    		file_input.sendKeys(absolute_file_path);
 	    		Thread.sleep(2000);
-	    	}else if (fileType.equals("video")) {
+			}else if (fileType.equals("video")) {
 	    		String absolute_file_path = absolute_file_dir + "/" + "SampleVideo_1280x720_1mb.mp4";
 	    		file_input.sendKeys(absolute_file_path);
 	    		Thread.sleep(2000);
@@ -41,10 +41,13 @@ public class UploadDownloadFiles {
 	    	}
 	    	else {
 	    		log.error("Invalid file input type {}", fileType);
-	    	}
-	    	 // Create object of Robot class
+			}
+			//Set <String> windows = driver.getWindowHandles();
+			//String mainwindow = driver.getWindowHandle();
+			//System.exit(0);
+			// driver.switchTo() .activeElement()
 
-	    	//.sendKeys(protractor.Key.ENTER).perform();
+	    	 // Create object of Robot class
 	        Robot r = new Robot();
 	        r.mouseMove(600, 400);
 	        r.mousePress(InputEvent.BUTTON1_DOWN_MASK);

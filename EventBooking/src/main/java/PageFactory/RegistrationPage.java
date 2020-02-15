@@ -1,7 +1,10 @@
 package PageFactory;
 
 import java.io.FileInputStream;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.List;
 
 import org.apache.commons.lang.math.RandomUtils;
 import org.apache.logging.log4j.LogManager;
@@ -21,8 +24,9 @@ public class RegistrationPage {
 	public static boolean status = true;
 	public static String pwd = System.getProperty("user.dir");
 	
-	public static boolean navigateToRegisterPage(String browserName, WebDriver driver, String autoRegisterUserFlag, HashMap<String, String> autoRegisterUserData) 
-	{
+	public static boolean navigateToRegisterPage(String browserName, WebDriver driver, String autoRegisterUserFlag, 
+												HashMap<String, String> autoRegisterUserData) 
+	{	
 		try
 		{
 			// verify the register button
@@ -73,7 +77,7 @@ public class RegistrationPage {
 			Thread.sleep(1000);
 			//verify registration for attendee
 			if (autoRegisterUserFlag=="yes") {
-				status = autoRegisterUserData(driver, autoRegisterUserData);
+				status = setAutoRegisterUserData(driver, autoRegisterUserData);
 				
 			}else {
 				ReadExcel(browserName, driver);
@@ -87,7 +91,10 @@ public class RegistrationPage {
 		return status;
 	}
 
-	private static boolean autoRegisterUserData(WebDriver driver, HashMap<String, String> autoRegisterUserData) throws InterruptedException {
+	private static boolean setAutoRegisterUserData(WebDriver driver, HashMap<String, String> autoRegisterUserData) throws InterruptedException {
+		
+		// Rebuild the Data 
+		//autoRegisterUserData = regenerateDataValues(autoRegisterUserData);
 		// TODO Auto-generated method stub
 		log.info("First user = {}", autoRegisterUserData.get("EMAILID"));
 		log.info("First password = {}", autoRegisterUserData.get("PASSWORD"));
@@ -129,6 +136,39 @@ public class RegistrationPage {
 		
 		return status;
 	}
+
+
+	public static HashMap<String, String> regenerateDataValues(HashMap<String, String> testdata) {
+		log.info("The data is =-=-=-=-= {}",testdata.get("FirstName"));
+		if (testdata.get("UserType").equals("auto")){
+			List<String> list = new ArrayList<String>(){
+				private static final long serialVersionUID = 1L;
+				{ 	this.add("Event Attendee");
+					this.add("Event Organizer");
+				}
+			};
+			Collections.shuffle(list);
+			testdata.replace("UserType", list.get(0));
+		}else if (testdata.get("FirstName").equals("auto")){
+			String value = Utils.randomGenerator("string", "User", "FirstName");
+			testdata.put("FirstName", value);
+		}else if (testdata.get("LastName").equals("auto")){
+			String value = Utils.randomGenerator("string", "User", "LastName");
+			testdata.put("FirstName", value);
+		}else if (testdata.get("PhoneCountry").equals("auto")){
+			List<String> list = new ArrayList<String>(){
+				private static final long serialVersionUID = 1L;
+				{ 	this.add("IN");
+					this.add("US");
+				}
+			};
+			Collections.shuffle(list);
+			testdata.replace("PhoneCountry", list.get(0));
+		}
+
+		return testdata;
+	}
+		
 
 	private static void ReadExcel(String browserName, WebDriver driver) throws Exception {
 		
