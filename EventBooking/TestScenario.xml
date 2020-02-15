@@ -8,10 +8,25 @@
 	<parameter name="password" value="Kingstone@123" />
 	<test name="Page Tests" preserve-order="true">
 		<classes>
+			<class name="TestManager.RegistrationTest">
+				<methods>
+					<include name="resgister_new_user_verify_email_01" />
+				</methods>
+			</class>
 			<class name="TestManager.LoginTest">
 				<methods>
 					<include name="verification_of_valid_login_credentials_test01" />
 					<include name="verification_of_Invalid_login_credentials_test02" />
+				</methods>
+			</class>
+			<class name="TestManager.EventsPageTest">
+				<methods>
+					<include name="verification_of_events_creation_test01" />
+				</methods>
+			</class>
+			<class name="TestManager.TicketBookingTest">
+				<methods>
+					<include name="test1" />
 				</methods>
 			</class>
 		</classes>

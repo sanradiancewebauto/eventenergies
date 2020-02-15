@@ -6,6 +6,9 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -13,7 +16,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import ElementRepository.*;
-import CommonLibs.*;
+import CommonLibs.TitleVerification;
+import CommonLibs.Utils;
 
 public class EventsPage {
 
@@ -23,6 +27,10 @@ public class EventsPage {
 	
 
 	public static Object CreateEvents(String browserName, WebDriver driver, HashMap<String, String> testdata) throws Exception  {
+		log.info("Re-generate testdata values");
+		testdata = regenerateDataValues(testdata);
+		log.info("The new data set is {}",testdata);
+		
 		try {
 			returnValues.put("EventStatus", "false");
 			log.info("Step 1: Navigate to the Add Event Details for event creation.");
@@ -47,7 +55,7 @@ public class EventsPage {
 			}
 			log.info("Step 2: Create a Event with following details :");
 			WebElement eventTitle = driver.findElement(By.cssSelector(EventCreationPageElements.eventTitle));
-			log.info("Event Left Section");
+			log.info("Event Page Left Section Details");
 			log.info("Enter the event Title as [{}]", testdata.get("EventTitle"));
 			eventTitle.click();
         	Thread.sleep(1000);
@@ -85,7 +93,8 @@ public class EventsPage {
 		        }else if (isTitle.matches("Add images")) {
 		        	log.info("Upload image to the event from system location.");
 		        	CommonLibs.UploadDownloadFiles.uploadDownloadFiles(driver, "image", "1M");
-		        	returnValues.put("EventStatus", "true");
+					returnValues.put("EventStatus", "true");
+					
 		        }else if (isTitle.matches("Add video")) {
 		        	log.info("Upload video to the event from system location.");
 		        	CommonLibs.UploadDownloadFiles.uploadDownloadFiles(driver, "video", "1M");
@@ -116,25 +125,33 @@ public class EventsPage {
 				categoryField.click();
 				WebElement categoryMenuBox = driver.findElement(By.cssSelector(EventCreationPageElements.categoryDropDownMenu));
 				List<WebElement> categoryMenuItems = categoryMenuBox.findElements(By.xpath(EventCreationPageElements.categoryMenuItems));
-				for (WebElement catogery : categoryMenuItems)
-				{
-				    if (catogery.getText().equals(testdata.get("SelectCategory")))
-				    {
-				    	log.info("Selecting the event category as [{}]",testdata.get("SelectCategory"));
-				    	catogery.click(); // click the desired option
-				        break;
-				    }
+				if (testdata.get("SelectCategory").equals("auto")){
+					Collections.shuffle(categoryMenuItems);
+					categoryMenuItems.get(0);
+					log.info("Selecting the event category as --[{}]",categoryMenuItems.get(0).getText());
+					categoryMenuItems.get(0).click(); // click the desired option
+				}else {
+					for (WebElement category : categoryMenuItems)
+					{
+						if (category.getText().equals(testdata.get("SelectCategory")))
+						{
+							log.info("Selecting the event category as [{}]",testdata.get("SelectCategory"));
+							category.click(); // click the desired option
+							break;
+						}
+					}	
 				}
 				Thread.sleep(2000);
 				WebElement subCategoryMenu = driver.findElement(By.cssSelector(EventCreationPageElements.subCategoryDropDownMenu));
 				List<WebElement> subCategoryMenuItems = subCategoryMenu.findElements(By.xpath(EventCreationPageElements.subCategoryMenuItems)); 
 				log.info("Selecting event sub-category from the list = {}.", subCategoryMenuItems.get(0).getText());
+
 				for ( WebElement subcategory : subCategoryMenuItems ) {
-					if(testdata.get("SubCategory").equals(subcategory.getText())) {
+					if(testdata.get("SubCategory").equals("auto")) {
 						log.info("Selecting the event subcategory as [{}]",testdata.get("SubCategory"));
 						subcategory.click();
 						break;
-					}else if (testdata.get("SubCategory").equals("random")) {
+					}else if (testdata.get("SubCategory").equals("auto")) {
 						log.info("Selecting event sub-category from the list as [{}]", subCategoryMenuItems.get(0).getText());
 						subcategory.click();
 						break;
@@ -167,8 +184,9 @@ public class EventsPage {
 			// final submit
 			log.info("Click submit");
 			driver.findElement(By.cssSelector(EventCreationPageElements.submit)).click();
-
+			
 			try {
+				log.info("Looking for event error popup");
 				if (driver.findElement(By.cssSelector(EventCreationPageElements.errorAlert)) != null) {
 					log.error("Event field input error.");
 					WebElement errorAlert = driver.findElement(By.cssSelector(EventCreationPageElements.errorAlert));
@@ -185,14 +203,9 @@ public class EventsPage {
 				}
 			}catch (NoSuchElementException Ex)
 			{
-				log.error("Unable to locate element.");
+				log.error("Event error popup not found.");
 			}
-				
-			
-			
-			Thread.sleep(6000);
-			
-			
+			Thread.sleep(300);
 		}catch (Exception E) 
 		{
 			 E.printStackTrace();
@@ -200,7 +213,6 @@ public class EventsPage {
 		
 		log.info("Complete data to be returned = {}",returnValues);
 		return returnValues;
-		
 	}
 
 
@@ -394,7 +406,7 @@ public class EventsPage {
 			WebElement pincodeValue = driver.findElement(By.cssSelector(EventCreationPageElements.pincodeValue));
 			log.info("Pincode entered is [{}]",testdata.get("PinCode"));
 			pincodeValue.sendKeys(testdata.get("PinCode"));
-			Thread.sleep(5000);
+			Thread.sleep(2000);
 			venueStatus.put("VenueStatus", "true");
 			
 		}
@@ -415,11 +427,13 @@ public class EventsPage {
 			ticketType.click();
 			Thread.sleep(1000);
 			List<WebElement> ticketTypeOptions = ticketType.findElements(By.tagName("option"));
+			Collections.shuffle(ticketTypeOptions);
+			WebElement selectedTicketOption = ticketTypeOptions.get(0);
+			log.info("Ticket type selected is [{}]", selectedTicketOption.getText());
 			for (WebElement ticketype : ticketTypeOptions) {
-				if (ticketype.getText().equals(testdata.get("TicketType"))) {
+				if (ticketype.getText().equals(selectedTicketOption.getText())) {
 					ticketype.click();
 					ticketStatus.put("TicketStatus", "true");
-					log.info("Ticket type selected is {}", testdata.get("TicketType"));
 					Thread.sleep(1000);
 					break;
 				}
@@ -430,14 +444,23 @@ public class EventsPage {
 			WebElement paymetGateway = driver.findElement(By.cssSelector(EventCreationPageElements.paymetGateway));
 			paymetGateway.click();
 			List<WebElement> paymentGatewayOptions = paymetGateway.findElements(By.tagName("option"));
-			for (WebElement paymentgateway : paymentGatewayOptions) {
-				if (paymentgateway.getText().equals(testdata.get("PaymentGateway"))) {
-					paymentgateway.click();
-					log.info("Payment Gateway type selected is {}", testdata.get("PaymentGateway"));
-					ticketStatus.put("TicketStatus", "true");
-					Thread.sleep(1000);
-					break;
-				}
+			if (testdata.get("PaymentGateway").equals("auto")){
+				Collections.shuffle(paymentGatewayOptions);
+				log.info("Payment gateway selected as {}",paymentGatewayOptions.get(0).getText());
+				Collections.shuffle(paymentGatewayOptions);
+				paymentGatewayOptions.get(0);
+				log.info("Selecting the payment gateway as --[{}]",paymentGatewayOptions.get(0).getText());
+				paymentGatewayOptions.get(0).click(); // click the desired option
+			}else {
+				for (WebElement category : paymentGatewayOptions)
+				{
+					if (category.getText().equals(testdata.get("PaymentGateway")))
+					{
+						log.info("Selecting the payment gateway as [{}]",testdata.get("PaymentGateway"));
+						category.click(); // click the desired option
+						break;
+					}
+				}	
 			}
 			Thread.sleep(1000);
 			WebElement ticketQuantity = driver.findElement(By.cssSelector(EventCreationPageElements.ticketQuantity));
@@ -511,7 +534,7 @@ public class EventsPage {
 			}else {
 				log.info("Tag title visible.");
 				log.info("Step : Add new tag.");
-				Thread.sleep(3000);
+				Thread.sleep(1000);
 			    List<WebElement> selectTagList = driver.findElements(By.xpath(EventCreationPageElements.selectTagList));
 			    for (WebElement selectTag : selectTagList) {
 			    	if (selectTag.getText().equals(testdata.get("TagName"))){
@@ -522,34 +545,37 @@ public class EventsPage {
 			    }
 			    if (select_tag == true) {
 			    	tagStatus.put("TagStatus", "true");
-			    	return tagStatus;
-			    }
-				driver.findElement(By.xpath(EventCreationPageElements.newTag)).click();
-				Thread.sleep(2000);
-				log.info("I have clicked tag....");
-				WebElement newTagPage = driver.findElement(By.xpath(EventCreationPageElements.newTagPageTitle));
-				if (TitleVerification.verify_title(newTagPage.getText()) == true) {
-					log.info("Navigation to Add New Tag page successful");
-				    driver.findElement(By.id("learning_tag_name")).click();
-				    Thread.sleep(1000);
-				    driver.findElement(By.id("learning_tag_name")).sendKeys(testdata.get("TagName"));
-				    driver.findElement(By.id("learning_tag_description")).click();
-				    Thread.sleep(1000);
-				    driver.findElement(By.id("learning_tag_description")).sendKeys(testdata.get("Description"));
-				    driver.findElement(By.cssSelector(EventCreationPageElements.addTagSubmit)).click();
-				    Thread.sleep(3000);
-				    List<WebElement> selectTagListNew = driver.findElements(By.xpath(EventCreationPageElements.selectTagList));
-				    for (WebElement selectTag : selectTagListNew) {
-				    	if (selectTag.getText().equals(testdata.get("TagName"))){
-				    		log.info("Selecting tag from list {}", testdata.get("TagName"));
-				    		selectTag.click();
-				    	}
-				    }
-				    tagStatus.put("TagStatus", "true");
-				}else {
-					log.error("Navigation to Add New Tag page failed.");
-					tagStatus.put("EventStatus", "false");
+			    	//return tagStatus;
+			    }else {
+					log.info("Tag not available in the list creating a new tag [{}]", testdata.get("TagName"));
+					driver.findElement(By.xpath(EventCreationPageElements.newTag)).click();
+					Thread.sleep(2000);
+					log.info("I have clicked tag....");
+					WebElement newTagPage = driver.findElement(By.xpath(EventCreationPageElements.newTagPageTitle));
+					if (TitleVerification.verify_title(newTagPage.getText()) == true) {
+						log.info("Navigation to Add New Tag page successful");
+						driver.findElement(By.id("learning_tag_name")).click();
+						Thread.sleep(1000);
+						driver.findElement(By.id("learning_tag_name")).sendKeys(testdata.get("TagName"));
+						driver.findElement(By.id("learning_tag_description")).click();
+						Thread.sleep(1000);
+						driver.findElement(By.id("learning_tag_description")).sendKeys(testdata.get("Description"));
+						driver.findElement(By.cssSelector(EventCreationPageElements.addTagSubmit)).click();
+						Thread.sleep(2000);
+						List<WebElement> selectTagListNew = driver.findElements(By.xpath(EventCreationPageElements.selectTagList));
+						for (WebElement selectTag : selectTagListNew) {
+							if (selectTag.getText().equals(testdata.get("TagName"))){
+								log.info("Selecting tag from list {}", testdata.get("TagName"));
+								selectTag.click();
+							}
+						}
+						tagStatus.put("TagStatus", "true");
+					}else {
+						log.error("Navigation to Add New Tag page failed.");
+						tagStatus.put("TagStatus", "false");
+					}
 				}
+
 			    
 			}
 		}catch (Exception E) {
@@ -557,6 +583,34 @@ public class EventsPage {
 		} 
 		
 		return tagStatus;
+		
+	}
+
+
+	public static HashMap<String, String> regenerateDataValues(HashMap<String, String> testdata) {
+		
+		for (String key : testdata.keySet()) { 
+			if ((key.equals("EventTitle")) &&  (testdata.get(key).equals("auto"))) {
+				String value = Utils.randomGenerator("raw", testdata.get("EventTitle"), "title");
+				testdata.put(key, value);
+			}else if ((key.equals("EventDescription")) &&  (testdata.get(key).equals("auto"))) {
+				String value = Utils.randomGenerator("raw", testdata.get("EventTitle"), "description");
+				testdata.put(key, value);
+			}else if ((key.equals("EventDescriptionDetails")) &&  (testdata.get(key).equals("auto"))) {
+				String value = Utils.randomGenerator("raw", testdata.get("EventTitle"), "detailed description");
+				testdata.put(key, value);
+			}else if ((key.equals("EventType")) &&  (testdata.get(key).equals("auto"))) {
+				List<String> list = new ArrayList<String>(){
+					private static final long serialVersionUID = 1L;
+					{ 	this.add("public");
+						this.add("private");
+					}
+				};
+				Collections.shuffle(list);
+				testdata.put(key, list.get(0));
+			}
+		}
+		return testdata;
 		
 	}
 

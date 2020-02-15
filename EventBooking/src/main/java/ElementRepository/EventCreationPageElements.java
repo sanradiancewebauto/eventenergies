@@ -110,8 +110,10 @@ public class EventCreationPageElements {
 	public static String timeZoneLabel ="div.col-sm-12:nth-child(6) > select:nth-child(2)";
 	
 	public static String timeSettingBtn = ".fa-cog"; //CSS
-	public static String timeSettingLabel = "label.right-header-content"; //CSS
-	public static String timePickParentCheckbox = "div.ng-dirty:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > input:nth-child(3)";
+	public static String timeSettingLabel = "div.ng-touched:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > h3:nth-child(1)"; //CSS
+	
+	public static String timePickParentCheckbox = "#enable-custom-purchase-timing";
+												
 	public static String venuPickParentCheckbox = "div.has-default:nth-child(4) > input:nth-child(3)"; //css
 	//Venue
 	public static String venueLabel=".row:nth-child(6) .common-header";
@@ -137,7 +139,8 @@ public class EventCreationPageElements {
 	public static String pincodeField =".col-sm-6:nth-child(6) > .popup-input-text";
 
 	//Tickets
-	public static String ticketLabel =".row:nth-child(1) > .col-sm-12 > .right-header-content";
+	public static String ticketLabel ="form.ng-tns-c18-0 > div:nth-child(1) > div:nth-child(1) > div:nth-child(1)";
+	
 
 	public static String ticketType =".col-md-12 > .customise-select"; // public static String  TicketTypeField=".col-md-12 > .customise-select";
 	
@@ -156,9 +159,8 @@ public class EventCreationPageElements {
 	public static String currencyType="div.col-lg-3:nth-child(8) > select:nth-child(2)";
 
 	//Add tags
-	public static String addKeyTagLabel=".flex-content > .right-header-content";
-
-	public static String newTag="//h3[contains(.,'New tag')]";
+	public static String addKeyTagLabel="div.row:nth-child(8) > div:nth-child(1) > div:nth-child(1) > h3:nth-child(1)";
+	public static String newTag="//h3[@class='btn btn-primary']";
 
 	public static String newTagPageTitle = "//h4[@class='heading']";
 	public static String newTagPage = "//input[@id='learning_tag_name']";

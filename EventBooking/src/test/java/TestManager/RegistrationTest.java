@@ -50,7 +50,8 @@ public class RegistrationTest {
 		log.info("Test to verify the Registration page.");
 		log.info("Validate the auto generated Email ID [{}] via [getnada.com] api's mail "
 				+ "service.",testdata.get("EMAILID"));
-    	String registeredMailId = nada.getInbox(testdata.get("EMAILID"));
+		String registeredMailId = nada.initMailID(testdata.get("EMAILID"));
+		log.info("Mail ID registration status : {}",registeredMailId);
        	Thread.sleep(5000);
 //    	int count = 0;
 //    	while (count < 2) {
@@ -61,7 +62,7 @@ public class RegistrationTest {
 //    		Thread.sleep(5000);
 //    		count = count + 1;
 //    	}
-    	log.info("Register a new user with generated email.");
+    	log.info("Register a new user with generated email. {}", testdata);
 		boolean status = PageFactory.RegistrationPage.navigateToRegisterPage(browserName, driver, 
 				autoRegisterUserFlag, testdata);
 
